@@ -1,0 +1,29 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Mazda AIO Tweaks
+project_name: MZD-AIO-TI | MZD All In One Tweaks Installer
+email: aio@MazdaTweaks.com
+email2: Trez@MazdaTweaks.com
+email3: Siutsch@MazdaTweaks.com
+description: > # this means to ignore newlines until "baseurl:"
+  All-in-one installer/uninstaller for many available Mazda MZD Infotainment System tweaks.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://mazdatweaks.com"
+#url: "http://mazda.tweaks:4000"
+#port: 4000
+github_username:  Trevelopment
+github_username2: Siutsch
+project_page: "https://github.com/Trevelopment/MZD-AIO-TI/"
+version: "2.0.5"
+# Build settings
+markdown: kramdown
+
+kramdown:
+  parse_block_html: true
+  input: GFM

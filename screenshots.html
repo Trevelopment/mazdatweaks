@@ -1,0 +1,23 @@
+---
+layout: page
+permalink: /screenshots/
+order: 5
+images:
+  - image_path: /images/slider/screenshot.jpg
+    title: THEN v2.0
+  - image_path: /images/slider/ver259.JPG
+    title: AND NOW v2.5.9 
+  - image_path: /images/slider/Screenshot-ImageJoiner.jpg
+    title: Image Joiner
+  - image_path: /images/slider/boot-prev.jpg
+    title: Boot Animation Preview  
+  - image_path: /images/slider/Screenshot-bgPrev.jpg
+    title: Background Preview
+---
+<h2>Screenshots</h2>
+<h5>THEN AND NOW</h5>
+<ul class="photo-gallery">
+  {% for image in page.images %}
+    <li><img src="{{ image.image_path }}" data-featherlight="{{ image.image_path }}" alt="{{ image.title}}"/></li>
+  {% endfor %}
+</ul>

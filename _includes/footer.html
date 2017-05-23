@@ -1,0 +1,58 @@
+<footer class="site-footer {{ page.title }}">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading"><a href="{{ site.base_url }}/">{{ site.title }}</a> | <a href="http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/122458-aio-all-one-tweaks.html">Mazda3Revolution Thread</a> | <a href="mailto:Trez@mazdatweaks.com?subject=MazdaTweaks%20Contact">Contact</a></h2>
+
+		<footer class="site-footer">
+			{% include icon-github.html username=site.github_username username2=site.github_username github=site.project_page %}
+		</footer>
+
+	</div>
+    <!--ddiv class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+          {% if site.github_username %}
+          <div>
+            <p>{% include icon-github.html username=site.github_username username2=site.github_username2 github=site.github_page %}</p>
+          </div>
+          {% endif %}
+      </div>
+
+      <iv class="footer-col footer-col-3">
+        <p></p>
+        <p>{{ site.description }}</p>
+      </div>
+    </div-->
+
+  </div>
+
+</footer>
+</div>
+<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="{{ site.base_url }}/js/totop.js"></script>
+<script>
+	w3IncludeHTML();
+	function w3_open() {
+	  document.getElementById("main").style.marginLeft = "33%";
+	  document.getElementById("mySidenav").style.width = "33%";
+	  document.getElementById("mySidenav").style.display = "block";
+	  document.getElementById("openNav").style.display = 'none';
+	}
+	function w3_close() {
+	  document.getElementById("main").style.marginLeft = "0%";
+	  document.getElementById("mySidenav").style.display = "none";
+	  document.getElementById("openNav").style.display = "inline-block";
+	}
+  $(function(){
+    $('.supported-fw-btn').featherlight($('#supported-fw'));
+  })
+</script>

@@ -1,0 +1,93 @@
+<nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-text-shadow" style="display:none" id="mySidenav">
+	<a href="javascript:void(0)"
+	onclick="w3_close()"
+	class="w3-closenav w3-xxlarge">&times;</a>
+	<a class=" w3-hover-green {% if page.url == '/' %} w3-blue {% endif %}" href="{{ '/' | prepend: site.baseurl }}">Home</a>
+	{% for my_page in site.pages %}
+	{% if my_page.title %}
+	<a class="page-link w3-hover-green {% if page.title == my_page.title %} w3-blue {% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+	{% endif %}
+	{% endfor %}
+	<a class=" w3-hover-green" href="http://trevelopment.win/mazda3revolutionthread">Thread</a>
+	<s><a class=" w3-hover-red" href="http://trevelopment.win/githubsite">GitHub</a></s>
+	<a class=" w3-hover-green" href="http://dl.mazdatweaks.win" class="btn">Download</a>
+	<a href="/screenshots" class="w3-hover-green">Screenshots</a>
+	<a href="/videoplayer" class="w3-hover-green">VideoPlayer Info</a>
+	<a href="/speedo" class="w3-hover-green">Speedometer Info</a>
+	<a href="/castscreen" class="w3-hover-green">CastScreen-Receiver</a>
+<a href="/androidauto" class="w3-hover-green">Android Auto</a>
+	<!--a class=" w3-hover-green" href="./faq/"></a-->
+</nav>
+{% if page.title == "Changelog" %}
+<nav class="w3-sidenav w3-black w3-text-shadow w3-card-2 w3-animate-right" style="display:none;right:0;" id="rightMenu">
+	<a href="javascript:void(0)" onclick="closeRightMenu()" class="w3-closenav w3-large version">
+		<h3>Version: &emsp; &times;</h3></a>
+		{% capture change %}{% include changelognav.md %}{% endcapture %}
+		{{ change | markdownify }}
+	</nav>
+	<script>
+	function openRightMenu() {
+		document.getElementById("rightMenu").style.display = "block";
+		$('#rightnavtoggle').hide();
+	}
+	function closeRightMenu() {
+		document.getElementById("rightMenu").style.display = "none";
+		$('#rightnavtoggle').show();
+	}
+	</script>
+	{% endif %}
+	<div id="main" style="margin-left: 0%;">
+		<header class="site-header">
+			<div class="wrapper navbar-wrapper w3-hide-small w3-text-shadow">
+				<ul class="navbar w3-dark-grey">
+					<li><a href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
+					{% for my_page in site.pages | sort: 'order', 'last' %}
+					{% if my_page.title %}
+					<li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> </li>
+					{% endif %}
+					{% endfor %}
+					<li class="w3-dropdown-hover">
+    <a href="#" class="moar">Moar</a>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a id="supported-fw-btn" class="supported-fw-btn w3-bar-item" style="cursor:pointer;">Supported Firmware</a>
+      <a href="/screenshots" class="w3-bar-item">Screenshots</a>
+      <a href="/videoplayer" class="w3-bar-item">VideoPlayer Info</a>
+      <a href="/speedo" class="w3-bar-item">Speedometer Info</a>
+      <a href="/castscreen" class="w3-bar-item">CastScreen-Receiver</a>
+	  <a href="/androidauto" class="w3-bar-item">Android Auto</a>
+    </ul>
+  </div>
+
+					</ul>
+					<div style="display:none;">
+						<div id="supported-fw">
+							<h2 id="which-fw-versions-are-supported">WHICH FW VERSIONS ARE SUPPORTED?:</h2>
+
+							<h3 id="tweaks-have-been-tested-with-and-can-be-installed-on-the-following-firmware-versions-at-this-time">Tweaks have been tested with and can be installed on the following firmware versions at this time:</h3>
+							<ul>
+								<li><strong>55.00.650A/753A/760A / 56.00.521A-NA(NA N)</strong></li>
+								<li><strong>56.00.100A/230A/240B/511A/512A/513C/514A-ADR(4A N)</strong></li>
+								<li><strong>56.00.100A/210A/230A/511A/512A/513A/513B/513C-EU</strong></li>
+								<li><strong>56.00.401A/403A-JP / 59.00.445A-JP / 56.00.100A-CHN</strong></li>
+								<li><strong>58.00.250A-NA(NA N) / 58.00.251A-ADR(4A N)</strong></li>
+								<li><strong>59.00.326A/330A/342A/442A/443C/449A/450A-ADR(4A N)</strong></li>
+								<li><strong>59.00.330A/441A/443A/446A/450A-NA(N NA)</strong></li>
+								<li><strong>59.00.330A/331A/443C/447A/449A-EU</strong></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				{% if page.url == '/xx' %}
+				<span class="language"><button class="us" onclick="$('.english').show();$('.german').hide();"><img src="{{ site.baseurl }}/images/US-flag.jpg" alt="Eng" title="English"></button><button class="ger" onclick=$('.german').show();$('.english').hide();><img src="{{ site.baseurl }}/images/Germany-flag.jpg" alt="Ger" title="German"></button></span>
+				{% endif %}
+				<section class="page-header">
+					<span class="w3-opennav w3-xxlarge w3-display-topleft w3-padding" onclick="w3_open()" id="openNav">&#9776;</span>
+					{% if page.title == "Changelog" %}<span id="rightnavtoggle" class="w3-opennav w3-xxlarge w3-display-topright w3-padding" onclick="openRightMenu()"><span class="w3-large w3-hide-small">VERSION: </span>&#9776;</span>{% endif %}
+					<h1 class="project-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a><br><small>{{ page.title }}</small></h1>
+					<h2 class="project-tagline">{{ site.project_name }}<br>{{ site.description }}</h2>
+					<a href='http://dl.mazdatweaks.win' class="btn">AIO 2.5 <img src='https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI'></a>
+
+					<a href="http://trevelopment.win/mazda3revolutionthread" class="btn">Mazda3Revolution</a>
+
+					<s><a href="http://trevelopment.win/githubsite" class="btn">View on GitHub</a><br></s>
+				</section>
