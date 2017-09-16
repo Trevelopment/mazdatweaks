@@ -32,7 +32,7 @@ permalink: /androidauto/
 Once Ubuntu is all set up this is the complete set of commands to take you from 0 to Android Auto in about 30-60 minutes:
 ```sh
 cd ~
-sudo apt-get install git adb Bluetooth tlp blueman bluemon bluez npm nodejs protobuf-compiler libsdl2-dev libunwind-dev libusb-dev  libsdl2-2.0-0 libsdl2-ttf-2.0-0 libportaudio2 libpng12-0 gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-alsa libssl-dev libusb-1.0-0-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libsdl1.2-dev libgtk-3-dev libgstreamer-plugins-bad1.0-dev
+sudo apt-get install git adb bluetooth libbluetooth-dev tlp blueman bluemon bluez npm nodejs protobuf-compiler libsdl2-dev libunwind-dev libusb-dev  libsdl2-2.0-0 libsdl2-ttf-2.0-0 libportaudio2 libpng12-0 gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-alsa libssl-dev libusb-1.0-0-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libsdl1.2-dev libgtk-3-dev libgstreamer-plugins-bad1.0-dev
 adb start-server
 git clone https://github.com/gartnera/headunit.git
 cd ~/headunit/mazda

@@ -11,10 +11,11 @@ order: 3
 **How can I get these awesome tweaks on my Infotainment System?**
 
 
->  [Download the latest AIO version](http://dl.mazdatweaks.win),  
+>  [Download the latest AIO version](http://dl.mazdatweaks.win),
 > * Install Requirements:
 >   * Windows 7 or Higher: [![MZD-AIO](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI)](http://dl.mazdatweaks.win "MZD-AIO-TI")
->   * NEW Mac Version (dmg): [![AIO FOR MAC!!](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/MZD-AIO-MAC/images/download.svg?version=2.5.9-Beta) ](http://mac.mazdatweaks.win "MZD-AIO-MAC")
+>   * NEW Mac Version (dmg): [![AIO FOR MAC!!](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/MZD-AIO-MAC/images/download.svg?version=2.6.6) ](http://mac.mazdatweaks.win "MZD-AIO-MAC")
+>  * Linux (deb): [![AIO FOR LINUX!!](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO-LINUX/images/download.svg?version=2.6.6) ](http://deb.mazdatweaks.win "MZD-AIO-LINUX")
 > * CMU Firmware Version 55 or Higher
 >  
 > Mark The Left, Green Box Next to each tweak to install
@@ -27,9 +28,9 @@ order: 3
 
 **Is AIO compatible with my FW version?**
 
+>  Since Ver. 2.6 **AIO IS COMPATIBLE WITH ALL FW V55, V56, V58, AD V59 up to V59.00.502**
 >  <a href="#" class="supported-fw-btn">All Compatible Firmware Versions Are Listed Here.</a>
->
-   AIO will read out your FW version at beginning of installation and show if it's not compatible (or not yet tested) and the installation will abort at this point if your firmware is incompatible.
+>  AIO will read out your FW version at beginning of installation, if it's not compatible the installation will abort.
 >
 >  Since Ver 2.5 AIO will prompt to make a jci backup and give instructions on where to send it to test for compatibility if incompatible firmware version is detected.
 
@@ -93,13 +94,13 @@ order: 3
 
 >  During installation/uninstalling, a log file is created (AIO_log.txt) and some additional files will be copied on the USB drive.   
    Please make a ZIP file of them (complete root of USB drive) and send that to me or upload somewhere (e.g. Google drive or so) and send me the link.   
-   You can download **[this tweak](http://trevelopment.win/backup-script "jci backup")** to make a copy of your jci folder, zip and upload if we need to take a deeper look into your files to find the issue.
+   You can download **[this tweak](//trevelopment.win/backup-script "jci backup")** to make a copy of your jci folder, zip and upload if we need to take a deeper look into your files to find the issue.
 
 ---
 
 **Why does AIO reboot automatically at the end?**
 
->  Because some tweaks are applied on the next boot or during the system boot process.  Also, it puts the system back into write-only mode.
+>  Because some tweaks are applied on the next boot or during the system boot process.  Also, it puts the system back into read-only mode.
 
 ---
 
@@ -107,7 +108,7 @@ order: 3
 
 >  It doesn't matter if you choose tweaks for uninstalling that you haven't installed.  AIO is designed to discover and revert only the changes that have been made by AIO with a few necessary exceptions.  Uninstalling all tweaks (and choosing default color scheme and background) will revert your system back to the default state.  Any changes made outside of AIO are your own responsibility.
 >
-> **NOTE:** Since AIO Ver. 2.5 you can find a 'Full Restore' script by typing **fullrestore** (one word) into the tweak filter text area on the top right of the app.  This script is optimized to directly target all the files that AIO modifies and revert them with an option to also remove all backup files created by AIO.
+> **NOTE:** Since AIO Ver. 2.5 you can find a 'Full Restore' script by typing **fullrestore** (one word) into the tweak filter text area on the top right of the app or from the left side pop-out navigation menu.  This script is optimized to directly target all the files that AIO modifies and revert them with an option to also remove all backup files created by AIO.
 
 ---
 
@@ -120,7 +121,7 @@ order: 3
 **Can I install AIO even from an SD card?**
 
 >  No. SD card slot in the car is ONLY for satnav maps. You need to use USB port in the car, so either USB stick or USB-SD card reader with your card in it.   
->  This has changed but requires a little bit of DIY => [Autorun Script](http://trevelopment.win/cmu-autorun)
+>  This has changed but requires a little bit of DIY => [Autorun Script](//trevelopment.win/cmu-autorun)
 
 ---
 
@@ -132,10 +133,11 @@ order: 3
    3. Press "11" and then press "Enter."
    4. Select script WiFi AP Toggle   
 
->  **All FW Can Activate Via SSH** run the command:
+>  **All FW Can Activate Via SSH** run the commands:
 ```sh
-/jci/scripts/jci-wifiap.sh start
+/jci/scripts/start_wifi.sh
 /jci/scripts/jci-fw.sh stop
+/jci/scripts/jci-wifiap.sh start
 ```    
    Then the access point of the car is running, you should see a WLAN "cmu ...". Simply log in and then access via IP 192.168.53.1 on the system.
 
@@ -186,7 +188,9 @@ order: 3
 
 **What are the video specs for playing videos?**
 
->  Video: MP4, AVI, FLV, WMV; Audio: Stereo MPA
+>  Video: MP4, AVI, FLV, WMV; Audio: Stereo MPA  
+>  A good format to use H264 video codec and MPEG-4 AAC audio codec in video files  
+>  360p quality works best (and still looks great)
 
 ---
 
@@ -195,10 +199,13 @@ order: 3
 > Check out the [VideoPlayer Page](/videoplayer "More Information About The VideoPlayer App")
 >  Try the following:
    * **REMOVE NAV_SD CARD**  
-   * Unplug all other USB drives, especially one, with much MP3s on it
+   * Put all videos in "movies" folder at the USB drive root.
+   * Unplug all other USB drives, especially one, with many MP3s on it.
    * Close the player and start again
+   * Turn the car on without the USB drive plugged in
    * Copy only one mp3 on your video USB drive
-   * Copy only a few videos on your stick (you don't have to delete, rename to *._mp4 is OK too, so that they will not found anymore)
+   * Copy only a few videos on your stick (you don't have to delete, rename to *._mp4 is OK too, so that they will not found anymore)*
+   * Try the SwapFile Tweak
    * Reboot your system and try to play a video right after that
 
 ---
@@ -213,23 +220,23 @@ order: 3
 
 **In entertainment window, pause-on-mute works perfectly. But if you leave from the entartainment window, "mute" mutes sound but does not pause the song.**
 
->  This behavior is correct and as expected. Just like when in the trick with the VideoPlayer app, the pause command will not reach the player if you are in any other app/menu.
+>  This behavior is correct and as expected.  The pause command will not reach the player if you are in any other app/menu.
 
 ---
 
 **I applied the Remove Message Reply tweak but I still get the message on my texts?**
 
 >  In order to apply this tweak you have to do a factory reset of **ALL** settings.  Unfortunately this is the only way to apply that tweak but here is a tip when applying.  
+<span id="order-audio-sources"></span>
 > __TIP:__ Edit the values of the PresetMessages nodes under your language in file `config/message_replies/jci/settings/configurations/blm_msg-system.xml` to start with your own custom preset messages after the factory reset.
-
 ---
 
 **I want to change the order of the audio sources. How can I do that?**
 
 >  You have to edit  
    `/jci/gui/apps/system/js/systemApp.js`  
-   line 624 - 637  
-   **Be careful, in the last line must not be a comma, or you run in to boot loop!**
+   around lines 624 - 637  
+   **Be careful, the last line must NOT end with a comma or you run in to boot loop!**
 
 ---
 
@@ -242,7 +249,7 @@ order: 3
 
 **CastScreen-Receiver Is Not Working?**
 
-> Troubleshooting CastScreen:   
+> [Troubleshooting CastScreen:](/castscreen "More Troubleshooting Techniques")  
 - Make sure you have enabled USB debugging in developer options and that when prompted you gave the CMU debugging authorization.
 - Make sure you have given the **App permissions on your phone to allow castscreen app to use usb storage** if the app never prompted for that reinstall it.
 - Try disconnecting for at least 5 seconds and then reconnecting your phone.

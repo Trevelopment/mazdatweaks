@@ -8,9 +8,9 @@
 	<a class="page-link w3-hover-green {% if page.title == my_page.title %} w3-blue {% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
 	{% endif %}
 	{% endfor %}
-	<a class=" w3-hover-green" href="http://trevelopment.win/mazda3revolutionthread">Thread</a>
-	<s><a class=" w3-hover-red" href="http://trevelopment.win/githubsite">GitHub</a></s>
-	<a class=" w3-hover-green" href="http://dl.mazdatweaks.win" class="btn">Download</a>
+	<a class=" w3-hover-green btn" href="http://dl.mazdatweaks.win">Download</a>
+	<a class=" w3-hover-green" href="//trevelopment.win/mazda3revolutionthread">Thread</a>
+	<s><a class=" w3-hover-red" href="//trevelopment.win/githubsite">GitHub</a></s>
 	<a href="/screenshots" class="w3-hover-green">Screenshots</a>
 	<a href="/videoplayer" class="w3-hover-green">VideoPlayer Info</a>
 	<a href="/speedo" class="w3-hover-green">Speedometer Info</a>
@@ -55,15 +55,14 @@
       <a href="/speedo" class="w3-bar-item">Speedometer Info</a>
       <a href="/castscreen" class="w3-bar-item">CastScreen-Receiver</a>
 	  <a href="/androidauto" class="w3-bar-item">Android Auto</a>
-    </ul>
   </div>
 
 					</ul>
 					<div style="display:none;">
 						<div id="supported-fw">
 							<h2 id="which-fw-versions-are-supported">WHICH FW VERSIONS ARE SUPPORTED?:</h2>
-
-							<h3 id="tweaks-have-been-tested-with-and-can-be-installed-on-the-following-firmware-versions-at-this-time">Tweaks have been tested with and can be installed on the following firmware versions at this time:</h3>
+							<STRONG>ALL FW V55, V56, V58, AND V59 UP TO V59.00.502 ARE SUPPORTED</STRONG>
+							<h3 id="tweaks-have-been-tested-with-and-can-be-installed-on-the-following-firmware-versions">Tweaks have been tested with the following firmware versions:</h3>
 							<ul>
 								<li><strong>55.00.650A/753A/760A / 56.00.521A-NA(NA N)</strong></li>
 								<li><strong>56.00.100A/230A/240B/511A/512A/513C/514A-ADR(4A N)</strong></li>
@@ -77,17 +76,18 @@
 						</div>
 					</div>
 				</div>
-				{% if page.url == '/xx' %}
-				<span class="language"><button class="us" onclick="$('.english').show();$('.german').hide();"><img src="{{ site.baseurl }}/images/US-flag.jpg" alt="Eng" title="English"></button><button class="ger" onclick=$('.german').show();$('.english').hide();><img src="{{ site.baseurl }}/images/Germany-flag.jpg" alt="Ger" title="German"></button></span>
+				{% if page.url == "/xx" %}
+				<span class="language"><button class="us" onclick="$('.english').show();$('.german').hide();"><img src="{{ site.baseurl }}/images/US-flag.jpg" alt="Eng" title="English"></button><button class="ger" onclick="$('.german').show();$('.english').hide();"><img src="{{ site.baseurl }}/images/Germany-flag.jpg" alt="Ger" title="German"></button></span>
 				{% endif %}
 				<section class="page-header">
 					<span class="w3-opennav w3-xxlarge w3-display-topleft w3-padding" onclick="w3_open()" id="openNav">&#9776;</span>
 					{% if page.title == "Changelog" %}<span id="rightnavtoggle" class="w3-opennav w3-xxlarge w3-display-topright w3-padding" onclick="openRightMenu()"><span class="w3-large w3-hide-small">VERSION: </span>&#9776;</span>{% endif %}
 					<h1 class="project-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a><br><small>{{ page.title }}</small></h1>
 					<h2 class="project-tagline">{{ site.project_name }}<br>{{ site.description }}</h2>
-					<a href='http://dl.mazdatweaks.win' class="btn">AIO 2.5 <img src='https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI'></a>
+					<a href='http://dl.mazdatweaks.win' class="btn">AIO 2.6 <img src='https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI'></a>
 
-					<a href="http://trevelopment.win/mazda3revolutionthread" class="btn">Mazda3Revolution</a>
+					<a href="//trevelopment.win/mazda3revolutionthread" class="btn">Mazda3Revolution</a>
 
-					<s><a href="http://trevelopment.win/githubsite" class="btn">View on GitHub</a><br></s>
+					<s><a href="//trevelopment.win/githubsite" class="btn">View on GitHub</a><br></s>
+
 				</section>

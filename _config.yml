@@ -14,7 +14,7 @@ email3: Siutsch@MazdaTweaks.com
 description: > # this means to ignore newlines until "baseurl:"
   All-in-one installer/uninstaller for many available Mazda MZD Infotainment System tweaks.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mazdatweaks.com"
+url: "https://mazdatweaks.com"
 #url: "http://mazda.tweaks:4000"
 #port: 4000
 github_username:  Trevelopment

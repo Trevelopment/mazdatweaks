@@ -14,6 +14,8 @@ images:
   - image_path: /images/slider/Screenshot-bgPrev.jpg
     title: Background Preview
 ---
+<link rel="stylesheet" href="/css/ideal-image-slider.css">
+<script src="/js/ideal-image-slider.min.js"></script>
 <h2>Screenshots</h2>
 <h5>THEN AND NOW</h5>
 <ul class="photo-gallery">
@@ -21,3 +23,28 @@ images:
     <li><img src="{{ image.image_path }}" data-featherlight="{{ image.image_path }}" alt="{{ image.title}}"/></li>
   {% endfor %}
 </ul>
+<h1>Trez's InfotainmentShots:</h1>
+<div id="slider">
+	<!--img src="/images/ss/ss1.png" alt="Infotainment Screenshot"-->
+	<img src="/images/ss/ss1.png" src="" alt="Infotainment Screenshot">
+	<img data-src="/images/ss/ss2.png" src="" alt="Infotainment Screenshot">
+	<img data-src="/images/ss/ss3.png" src="" alt="Infotainment Screenshot">
+	<img data-src="/images/ss/ss4.png" src="" alt="Infotainment Screenshot">
+	<img data-src="/images/ss/ss5.png" src="" alt="Infotainment Screenshot">
+	<img data-src="/images/ss/ss6.png" src="" alt="Infotainment Screenshot">
+	<img data-src="/images/ss/ss7.png" src="" alt="Infotainment Screenshot">
+	<img data-src="/images/ss/ss8.png" src="" alt="Infotainment Screenshot">
+	<img data-src="/images/ss/ss9.png" src="" alt="Infotainment Screenshot">
+	<img data-src="/images/ss/ss10.png" src="" alt="Infotainment Screenshot">
+	<img data-src="/images/ss/ss11.png" src="" alt="Infotainment Screenshot">
+	<img data-src="/images/ss/ss12.png" src="" alt="Infotainment Screenshot">
+</div>
+<script>
+var slider = new IdealImageSlider.Slider({
+	selector: '#slider',
+	height: 'auto', // Required but can be set by CSS
+	interval: 14000
+});
+slider.addBulletNav();
+slider.start();
+</script>

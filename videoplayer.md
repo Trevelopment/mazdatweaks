@@ -2,7 +2,7 @@
 layout: default
 permalink: /videoplayer/
 ---
-<h1 id="readme"><a href="http://trevelopment.win/videoplayergithub">VideoPlayer Repository</a></h1>
+<h1 id="readme"><a href="//trevelopment.win/videoplayergithub">VideoPlayer Repository</a></h1>
 <hr>
 <h2>README</h2>
 {% include_relative videoplayer-README.md %}

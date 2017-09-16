@@ -10,10 +10,79 @@ order: 4
 # MZD-AIO-TI 2.x.x CHANGELOG  [![Download](https://api.bintray.com/packages/trevelopment/AIO-Updates/MZD-AIO-TI/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win)
 
 ##### FOR [AIO v1.x.x CHANGELOG](/CHANGELOG) or visit [MazdaTweaks.com]
+[Full Changelog](changelog.htm)   
+###### **_NOTE: v59.00.502 has been locked down and cannot install tweaks at this time._**
 
+#### 2.6.0
+### **NEW TWEAKS:**
+- **USB Audio Mod** | *By: Enlsen*
+  - Long press folders/all songs in list view to play
+  - Adds folders button
+  - Removes "More like this" button
+  - Adds new icon for USB root button
+  - Set folders and song list icons correctly (were switched)
+  - Removes trailing "/" from folder names for list view and title of now playing
+  - Adds folder and song icons to the list view
+  - Adds folder and playlist icons to now playing
+  - Medium Album Art (180 pixels)
+> Bigger Album Art Tweak
+>   - Will make album art even larger (210 pixels)
+>   - Stretch smaller images to enforce bigger size
+>   - More Space For Long Titles (Folder, Song Title, Album etc.)
+      - **Full Width Titles** Option
+    - Titles will span the entire width of the screen.
+    - Will overlap album art if not hidden
+      - **Hide Album Art** Option
+    - Hides all Album Art
+
+- **No More Beeps**
+  - Disables All System 'Beeps' (Those that are not be silenced by 'Settings > Sound > Beep' option).
+  - 'Improved List Loop > Remove List Beeps' option is redundant but only disables list scrolling Beeps, I see no reason to remove it.
+- 'Remove Background Behind Buttons' is now **'Remove Background Overlays'** Options to Remove the Following Background Overlays:
+  - Behind Buttons (Original Tweak)
+  - **Now Playing** (Entertainment)
+  - **List View**
+  - **Text Message View**
+  - **In Call** (Active Caller Background)
+- Options Under 'Main Menu Tweaks'
+  - Main Menu Layout: **FlatLine**
+  - Main Menu Text: **Color Text** & **Hide Text**
+  - Smaller Coins > **Small Focused Coin**
+  - **Remove Glow** (Behind Selected Coin)
+
+##### Simplified Compatibility Check:
+  - Checked by Compatibility Group Based on FW version
+  - For better readability and to extend compatibility to cover all FW in the known groups.
+  - Compatibility Extended to: (Flavor and Region letters are irrelevant for these checks)
+    - Group 1 = All v55 & v56
+    - Group 2 = All v58
+    - Group 3 = All v59.00.300 - v59.00.399
+    - Group 4 = All v59.00.400 - v59.00.499
+  - A few specific checks are still done by FW these so certain tweaks may not install on unknown versions.
+  - Other than v59.00.500+ and v54- if you have a firmware version that does not fall in those ranges email me but I think that covers all of them.
+
+###### Bug Fixes & Changes
+- Wifi will now be enabled for Japan and NorthAmerica (From this point on Wifi is enabled for all no matter what region, previous installations are not be effected)
+- 'Remove Message Replies' now also removes the TTS Message "End of the message" After Reading a Text Message.
+  - Must factory reset __*ALL settings*__ after installing to apply changes
+- Fixed Bug where Install/Uninstall for 'Improved List Loop' would uninstall 'Shorter Delay Mod' and 'No More Beeps'
+- Moved some of the tweaks around in the list
+- Merged Windows, Mac OSX, and Linux projects into one so they are all on the same version. Required changes and improvements in the tweak building process and platform checks.
+- Full Restore Script can be accessed from the left side navigation menu
+
+#### 2.5.10
+-  Reworked v59 App List Patch
+  -  Pro: Menu structure will no longer be broken (VSM submenu will be restored)
+  -  Con: All apps that can come up on the list need to be added to the 'additionalApps' array in systemApp.js (I included every app I have ever seen or heard of including CASDK apps in the array you will only need to add custom developed apps)
+-  Patch to Full Restore Script to prevent potential bootloop when running with 'delete backups' option several times in a row.
+-  Replaced missing speedometer images
+-  Adjusted CastScreen, may fix issues for some.
+
+#### Bug Fixes
+- Replaced Missing Speedometer Images.
+- Choosing Speedometer in Statusbar will auto-select Date to Statusbar Mod
 
 ### 2.5.9
-
 
 **Fixed  CastScreen-Receiver**
 
@@ -36,7 +105,7 @@ order: 4
  - If FW >= 58: Shows user a message that AIO is not compatible and a choice is given to make a JCI backup and instructions on where to send it to test for compatibility.
  - If FW = 55 or 56: All FW v55 & v56 will pass the initial compatibility check but **may not pass compatibility checks for certain tweaks** meaning those teaks will be skipped during installation.
   - Email aio@mazdatweaks.com if you need assistance with an incompatible firmware, unless you are have FW less than v55 then just update to v55 or higher.
-  
+
 _**Force SSH and Zip Backup options are collapsed by default because they are only needed for certain situations and are not recomended to run with every install.**_
 
 ###### Added Compatible FW:
@@ -46,7 +115,7 @@ _**Force SSH and Zip Backup options are collapsed by default because they are on
   - 59.00.449A-EU
   - 59.00.449A-ADR
   - 59.00.450A-ADR
-  
+
 
 ### 2.5.6
 
@@ -81,7 +150,7 @@ _**Force SSH and Zip Backup options are collapsed by default because they are on
  - Removing Navigation SD card **will improve video player performance** this is due to the memory issues that exist within the MZD system.
  - Installation of the swapfile will also improve performance, swap mounting has been improved.
 
-##### Want more info on the Video Player? Check out the [Video Player Repository](http://trevelopment.win/videoplayergithub)
+##### Want more info on the Video Player? Check out the [Video Player Repository](//trevelopment.win/videoplayergithub)
 
 - **CUSTOM BOOT ANIMATIONS**
   - Change all or part of the boot animation (Default 'Disabled' Animation Uses Default LoopLogo for all 3 parts of the sequence allowing for the shortest boot time the illusion of no boot animation)
@@ -125,7 +194,7 @@ ___
     - Because with the wheel rotation, 30 second jumps are too much
 - Speedometer Variant Option:
  - Start App In Analog Mode
- 
+
 
 ### 2.4.2
 - Reverted Compatibility for 'Media Order Patch & FLAC Support' tweak.
@@ -440,9 +509,9 @@ _Pro Tip -_ Install partial color scheme by deleting some of the images before i
 
 #### - Built in Translator
  ***
-[Electron]: (http://electron.atom.io/)
+[Electron]: (//electron.atom.io/)
 [AngularJS]: (https://angularjs.org/)    
-[MazdaTweaks.com]:(http://mazdatweaks.com/)
+[MazdaTweaks.com]:(//mazdatweaks.com/)
 [NodeJS]: (https://nodejs.org/)
 [Chromium]: (https://www.chromium.org/)
 [1]: (https://github.com/Siutsch/AIO---All-in-one-tweaks)
