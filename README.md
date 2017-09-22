@@ -1,9 +1,9 @@
 <div class="downloads">
-# **MZD-AIO-TI 2.6.6** [ ![MZD-AIO-WIN](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
+# **MZD-AIO-TI 2.7.0** [ ![MZD-AIO-WIN](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
  **32bit Windows** [![MZD-AIO-32-BIT](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI)](http://dl32.mazdatweaks.win "32-BIT-MZD-AIO-TI")
-**Mac OSX:** [ ![MAC-AIO-OSX](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/MZD-AIO-MAC/images/download.svg?version=2.6.6) ](http://mac.mazdatweaks.win "AIO v2.6.6 Dmg Package for Mac OSX")
+**Mac OSX:** [ AIO v2.7.0 OSX ](http://mac.mazdatweaks.win "AIO v2.7.0 Dmg Package for Mac OSX")
 **Linux:**
-[ ![MZD-AIO-LINUX](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO-LINUX/images/download.svg?version=2.6.6) ](http://deb.mazdatweaks.win "AIO 2.6.6 Deb Package for Linux")
+[ AIO v2.7.0 Linux (deb) ](http://deb.mazdatweaks.win "AIO v2.7.0 Deb Package for Linux")
 </div>
 ## MZD All In One tweaks Installer
 
@@ -14,17 +14,9 @@
 ---
 
 ## WHICH FW VERSIONS ARE SUPPORTED?:
-**ALL FW V55, V56, V58, AND V59 UP TO V59.00.502 ARE SUPPORTED**
+**ALL FW V55, V56, V58, AND V59 UP TO V59.00.502* ARE SUPPORTED**
+* v59.00.502 has taken away the ability to install tweaks.  For more information [Visit This Tread](https://trevelopment.win/im-super-serial)
 
-### Tweaks have been tested with the following firmware versions:
-* **55.00.650A/753A/760A / 56.00.521A-NA(NA N)**
-* **56.00.100A/230A/240B/511A/512A/513C/514A-ADR(4A N)**
-* **56.00.100A/210A/230A/511A/512A/513A/513B/513C-EU**
-* **56.00.401A/403A-JP / 59.00.445A-JP / 56.00.100A-CHN**
-* **58.00.250A-NA(NA N) / 58.00.251A-ADR(4A N)**
-* **59.00.326A/330A/342A/442A/443C/449A/450A-ADR(4A N)**
-* **59.00.330A/441A/443A/446A/450A-NA(NA N)**
-* **59.00.330A/331A/443C/447A/449A-EU**
 
 ---
 
