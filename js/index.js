@@ -7,4 +7,5 @@ $(function(){
 	}
   });
   $('.page-content a:not(".dl-link")').attr('target','_blank');
+  $('h5 a').attr('target','_top');
 })

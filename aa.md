@@ -3,9 +3,54 @@ layout: default
 permalink: /androidauto/
 ---
 
-# How To Run **Android Auto** In An Ubuntu Virtual Machine
+# MZD Headunit App for Android Auto
+##### Updated:<br> ![12/01/2017](/images/updated.png)
+#### Changelog since v1.0:
+- v1.03:
+  - Bluetooth calling issue resolved with patch to sound config files
+  - Audio streams adjusted
+  - Video focus is lost at beginning and end of a Bluetooth call
+- v1.04
+  - Bluetooth calling issue completely resolved (no patch needed)
+  - MZD multicontroller buttons mapped:
+    - Nav - AA home
+    - FAV (<span class="icon-star"></span>) - Regain video focus
+    - Call - AA Phone context or Answer calls
+    - Call End - End Call
+  - Tap textarea on credits screen to view headunit.log
+- v1.05
+  - Video Focus on Bluetooth calls issue resolved
+- v1.06
+  - AA Log scrollable (credits screen)
+  - Some Audio volume/quality issues resolved
+- v1.07
+  - GPS code rewritten to be more stable and work in parallel with MZD Navigation
+  - AA Media registered on its own separate stream (resolves multiple audio focus issues)
+  - Remapped FAV (<span class="icon-star"></span>) Button - Switch audio focus to MZD Entertainment
+  - Control USB audio with prev/next buttons (when it has audio focus)
+
+#### Download links:
+[Latest AA Release](http://aa.mazdatweaks.win)<br>
+[Latest AA W/ Beta Features](http://aabeta.mazdatweaks.win) (if there is one)
+##### Old Versions
+_Beta releases will have 1 or more features from the next version but official releases will have more stable code._<br>
+[v1.04](https://trevelopment.win/aa104)<br>
+[v1.05](https://trevelopment.win/aa105)<br>
+[v1.06](https://trevelopment.win/aa106)<br>
+[v1.07](https://trevelopment.win/aa107)<br>
+[Mirror for v1.05b, v1.06 & v1.06b](https://trevelopment.win/aa-mirror105b)<br>
+[Another Mirror for v1.06](https://trevelopment.win/aa-megamirror106)<br>
+[Mirror for v1.07](https://trevelopment.win/aamirror107)<br>
+
+For more information visit the [Headunit Repository](https://trevelopment.win/aarepo)
+or visit [this mazda3revolution thread](https://trevelopment.win/aafix).
+
+---
+# How To Run **Android Auto** In Ubuntu (Virtual Machine)
 
 ## [Windows 10](https://www.microsoft.com/software-download/windows10 "Download Windows 10"), [VirtualBox VM Manager](https://www.virtualbox.org/wiki/Downloads "Download VirtualBox"), [Ubuntu v16.04 64-bit](https://www.ubuntu.com/download "Ubuntu Downloads")
+
+## OR just Ubuntu [Ubuntu v16.04 64-bit](https://www.ubuntu.com/download "Ubuntu Downloads") as the main OS.
 
 ### **Required Knowledge:**
 **To Run:** Ability to follow these instructions, create a Virtual Machine, use a command line interface, and basic understanding of git and bash shell scripting.   
@@ -13,12 +58,12 @@ permalink: /androidauto/
 
 ### **Required Hardware:**
 **Android Phone:** v5+ with Android Auto App installed and USB Debugging Enabled.   
-**USB Bluetooth Receiver:** I could not figure out how to use a built in Bluetooth receiver in a Virtual Machine.
+**USB Bluetooth Receiver:** or built in Bluetooth receiver.
 
 ---   
 ## Part 1: Virtual Machine
 
-##### If you already know how to do this or are already on Linux skip to [part 2](#part-2) These are instructions for Windows 10 and Ubuntu 16.04(64-bit) but any recent Mac OS and Linux distro should work just as well.
+##### If you already know how to do this or are already on Ubuntu/Linux skip to [part 2](#part-2) These are instructions for Windows 10 and Ubuntu 16.04(64-bit) but any recent Mac OS and Linux distro should work just as well.
 
 | --- | --- |
 | - Create an Ubuntu (Linux) Virtual Machine and boot up Linux with a disk image from the link above | ![Virtual Machine](/images/AA/vm1.jpg "Set Up Virtual Machine") |
@@ -28,27 +73,29 @@ permalink: /androidauto/
 | - By now you should have a fully functional Ubuntu Virtual Machine running with working USB drivers to use your devices. | ![Ubuntu](/images/AA/ubuntu.png "Ubuntu") |
 
 ---
+<a name="part-2"></a>
 ## Part 2:  From 0 to AA
 Once Ubuntu is all set up this is the complete set of commands to take you from 0 to Android Auto in about 30-60 minutes:
 ```sh
 cd ~
-sudo apt-get install git adb bluetooth libbluetooth-dev tlp blueman bluemon bluez npm nodejs protobuf-compiler libsdl2-dev libunwind-dev libusb-dev  libsdl2-2.0-0 libsdl2-ttf-2.0-0 libportaudio2 libpng12-0 gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-alsa libssl-dev libusb-1.0-0-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libsdl1.2-dev libgtk-3-dev libgstreamer-plugins-bad1.0-dev
-adb start-server
-git clone https://github.com/gartnera/headunit.git
-cd ~/headunit/mazda
-git clone https://github.com/lmagder/m3-toolchain.git
-sudo cp -a ~/headunit/mazda/m3-toolchain/* /usr
-make
-sed -i 's/xvimagesink/ximagesink/g' ~/headunit/ubuntu/outputs.cpp
-adb devices -l
-cd ../ubuntu && make
+sudo apt-get install git adb bluetooth libbluetooth-dev tlp blueman bluemon bluez libsdl2-2.0-0 libsdl2-ttf-2.0-0 libportaudio2 gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-alsa
+sudo apt-get install libssl-dev libusb-1.0-0-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libsdl1.2-dev libgtk-3-dev libudev-dev libunwind-dev libsdl2-dev libgstreamer-plugins-bad1.0-dev protobuf-compiler
+git clone --recursive https://github.com/gartnera/headunit.git
+sed -i 's/xvimagesink/ximagesink/g' ~/headunit/ubuntu/outputs.cpp # ONLY NEEDED if running on a virtual machine
+cd ~/headunit/ubuntu
+make clean && make
 sudo ./headunit
-reboot
 ```
 Now you have the Android Auto Ubuntu Emulator Installed, every time you want to open the emulator back up you just enter the command:  
 ```sh
 sudo ~/headunit/ubuntu/headunit
 ```
+
+To compile a headunit binary for use in the car run:
+```sh
+cd ~/headunit/mazda && make clean && make
+```
+
 I hope this will lead to more programmers who did not want to bother installing a new operating system or spend a lot of time figuring out how to set up the development environment and whatnot to contribute to the Android Auto project.  I tried to make these instructions as simple, clear, and straightforward as possible but if there are any ambiguities or you have an improvement or suggestion for this tutorial [shoot me an email](mailto:trez@mazdatweaks.com?subject=AA%20on%20Ubuntu%20Suggestion). To all my fellow HaXors out there Happy Hacking!   
 **NOTES:** You may need to manually reconnect your phone if it is disconnected by AA.  You need to have your phone in MTP mode (you can try PTP as well) to make the adb connection properly.  if you are having trouble connecting you may be using an incompatible Bluetooth receiver.
 
@@ -79,3 +126,7 @@ To start again:
 cd ~/CastScreen/receiver
 sudo sh ./wait_adb.sh
 ```
+
+<style>
+#updated- img{max-width:500px;}
+</style>

@@ -1,9 +1,9 @@
 <div class="downloads">
-# **MZD-AIO-TI 2.7.0** [ ![MZD-AIO-WIN](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
+# **MZD-AIO-TI 2.7.2** [ ![MZD-AIO-WIN](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
  **32bit Windows** [![MZD-AIO-32-BIT](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI)](http://dl32.mazdatweaks.win "32-BIT-MZD-AIO-TI")
-**Mac OSX:** [ AIO v2.7.0 OSX ](http://mac.mazdatweaks.win "AIO v2.7.0 Dmg Package for Mac OSX")
+**Mac OSX:** [ AIO v2.7.2 OSX ](http://mac.mazdatweaks.win "AIO v2.7.2 Dmg Package for Mac OSX")
 **Linux:**
-[ AIO v2.7.0 Linux (deb) ](http://deb.mazdatweaks.win "AIO v2.7.0 Deb Package for Linux")
+[ AIO v2.7.2 Linux (deb) ](http://deb.mazdatweaks.win "AIO v2.7.2 Deb Package for Linux")
 </div>
 ## MZD All In One tweaks Installer
 
@@ -14,9 +14,12 @@
 ---
 
 ## WHICH FW VERSIONS ARE SUPPORTED?:
-**ALL FW V55, V56, V58, AND V59 UP TO V59.00.502* ARE SUPPORTED**
-* v59.00.502 has taken away the ability to install tweaks.  For more information [Visit This Tread](https://trevelopment.win/im-super-serial)
+**ALL FW V55, V56, V58, AND V59 UP TO V59.00.504* ARE SUPPORTED**
+* v59.00.502+ has taken away the ability to install tweaks.  For more information [Visit This Tread](https://trevelopment.win/im-super-serial)
 
+---
+
+### Information on [Android Auto Headunit](/androidauto)
 
 ---
 

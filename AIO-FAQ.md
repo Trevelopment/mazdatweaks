@@ -13,9 +13,9 @@ order: 3
 
 >  [Download the latest AIO version](http://dl.mazdatweaks.win),
 > * Install Requirements:
->   * Windows 7 or Higher: [![MZD-AIO](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI)](http://dl.mazdatweaks.win "MZD-AIO-TI")
->   * NEW Mac Version (dmg): [![AIO FOR MAC!!](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/MZD-AIO-MAC/images/download.svg?version=2.6.6) ](http://mac.mazdatweaks.win "MZD-AIO-MAC")
->  * Linux (deb): [![AIO FOR LINUX!!](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO-LINUX/images/download.svg?version=2.6.6) ](http://deb.mazdatweaks.win "MZD-AIO-LINUX")
+>   * Windows 7 or Higher: [v2.7.2 exe](http://dl.mazdatweaks.win "MZD-AIO-TI")
+>  * Mac Version (dmg): [v2.7.2 dmg](http://mac.mazdatweaks.win "MZD-AIO-MAC")
+>  * Linux (deb): [v2.7.2 deb](http://deb.mazdatweaks.win "MZD-AIO-LINUX")
 > * CMU Firmware Version 55 or Higher
 >  
 > Mark The Left, Green Box Next to each tweak to install
