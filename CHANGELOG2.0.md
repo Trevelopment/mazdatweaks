@@ -1,17 +1,130 @@
 ---
 layout: page
-title: Changelog_2.0
+title: Changelog
 permalink: /changelog2/
 order: 4
 ---
----
-
 
 # MZD-AIO-TI 2.x.x CHANGELOG  [![Download](https://api.bintray.com/packages/trevelopment/AIO-Updates/MZD-AIO-TI/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win)
 
 ##### FOR [AIO v1.x.x CHANGELOG](/CHANGELOG) or visit [MazdaTweaks.com]
 [Full Changelog](changelog.htm)   
-###### **_NOTE: v59.00.502 has been locked down and cannot install tweaks at this time._**
+
+### 2.7.2
+##### Android Auto v1.07
+- Making and receiving calls work perfectly
+- Release Audio Focus (To Radio, USB Audio, etc.) with FAV Button
+- Control USB Audio with Next/Prev steering wheel buttons when it has Audio Focus
+- Fix for GPS, Mazda Navigation and HUD features will now function correctly
+- Black screen issues are memory related and can be avoided by minimizing the amount of memory being used by the system. This can be done by:
+  - Removing Nav SD card and other connected USB devices.
+  - Speedometer and CastScreen apps use active memory, uninstalling them will improve AA performance.
+  - Reboot the system, connect your phone after reboot.
+  - Use the Swapfile for additional memory.
+
+##### VideoPlayer v3.1
+- Fully Multicontroller Navigable
+- Navigate "Video Options/Info" panel with Control Knob.
+  - Rotate to choose
+  - Push to toggle option
+  - Tilt up/down to close options/info panel
+  - Tilt left right to choose between info and options
+- Change Highlight Color
+  - Choices: Red, Blue, Green, Pink
+- Fixed bug: random never played the last video in the list
+
+##### AIO Tweaks v0.4
+- Mount SwapFile
+  - Mount an unmounted SwapFile
+- Some shell commands with output (command shown in message when one is used)
+  - Running Processes: ps
+  - Disk Space: df -h
+  - Memory Info: cat /proc/swaps && cat /proc/meminfo
+  - E-mail me for requests/suggestions
+- Select Tweaks with command knob
+  - Rotate to choose
+  - Push to Select
+- Scroll message box by rotating/tilting command knob
+  - Tilt up at the top and pushing select close the message box
+  - Tilt up to reopen
+  - Works well when checking headunit.log
+- Irrelevant options are now hidden
+  - Ex: If CastScreen is not installed the CastScreen Start/Stop options will be hidden
+- General little fixes
+###### There are MANY failed legitimate attempts in the AIO Tweaks App code, most notable of which include "Show Backup Camera," "Take Screenshot" and global "Pause/Play Music". If you think you can get something to work that I have not, go for it!
+
+##### Speedometer to StatusBar
+- Now Speedometer to StatusBar moves the 'volume meter' and 'contact loading meter' a little bit to the left so they do not overlap the numbers.
+
+#### Swapfile
+- Choose to mount on boot (on by default) or copy without mounting.
+  - Mounted automatically when starting the VideoPlayer App
+  - Can be mounted manually with the AIO Tweaks App
+  - **Swapfile can be copied by itself onto the root of a separate USB drive containing music and/or videos and mounted during run-time as needed**
+
+#### App Changes
+- Skip Confirmation choice will persist
+
+### 2.7.0
+
+##### Android Auto v1.04
+- __*Bluetooth Call Bug Fixed!!!*__ *Big thanks to @lmagder for fixing the headunit code after @Trezdog44 found the root of the issue with the 'Bluetooth call patch'*
+- Video focus is lost at the beginning and end of a call due to the system expecting a context change.  Press the FAV (<span class="icon-star"></span>) Button to get video focus back and AA will function normally.
+- Phone button opens AA phone screen, also call buttons work for answering and ending calls.
+- N\AV button opens the AA home screen
+- Tap the black box on the credit screen to display contents of the headunit.log file.
+- Added the Android Auto Icon to the statusbar
+- (The 'Bluetooth Call Patch' from AA 1.03 is no longer needed from this version on.)
+  - (If it was applied will be reverted back to normal)
+
+##### VideoPlayer v3.0
+- Gave the VideoPlayer its own Icon
+- Toggle Unicode Mode On/Off with "U" Icon (If you have a lot of videos you will see the difference in load time)
+- Information/Options Panel, Open/Close with "i" Icon
+- Close by pressing command knob
+- Option: Hide/Show Unicode button
+- Video Title to Statusbar
+- Test Error Message
+- I put this in for me to test the error message because all my videos are formatted **360p MP4 H264 AAC** so I rarely hit a memory error.
+- Select options with left/right now includes reboot, show/hide background and info/options button.
+- Memory Error Message is now very informative
+- Offers Suggestions to Avoid Future Errors
+- Changed highlight color to blue
+
+##### AIO Tweaks v0.3
+- Start Headunit Process
+  - Will now successfully Start Android Auto Headunit Process
+  - Also Active Headunit stdout will pop up
+- View Headunit Log
+  - Shows the existing headunit.log file in a window
+- Screen off
+  - Turns the screen off
+- wifiAP
+ - Starts Wifi Access Point
+   - (start_wifi.sh; jci-wifiap.sh start)
+- Stop Firewall
+ - Stops the firewall
+   - (jci-fw.sh stop)
+- System Restore *WARNING: This will remove all tweaks and uninstall all AIO apps*
+  - Restore you system on the fly with a slimmed down restore script
+  - Removes all tweaks and AIO apps including this one
+  - Does not restore Color Scheme (all those image files take up a lot of space)
+  - Very small and safe only targets and restores from internal backups.
+  - Asks for verification twice to ensure it is not accidentally run.
+- Env - Environment variables
+  - For informational/educational purposes
+  - Also used by developers for fun times
+- Fixed saving issue with the tweak toggle buttons
+
+- General Improvements/Bug Fixes
+ - On Startup looks for some AIO log files loads FW version if found.
+  - If FW version is found An "i" Icon will appear in the top menu bar to the left of the "reload" icon.
+  - Click the icon to show your FW version, future plans to display more pertinent information as well.
+ - Added Save Button to Success Dialog
+ - Added To Top Menu "Downloads > Check For Update"
+ - Small logging fixes in autorun and recovery scripts
+ - Fixed WiFiAP files not copying when it was the only autorun script chosen
+ - Many other small improvements/fixes
 
 #### 2.6.0
 ### **NEW TWEAKS:**

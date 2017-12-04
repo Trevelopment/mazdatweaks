@@ -8,14 +8,13 @@
 	<a class="page-link w3-hover-green {% if page.title == my_page.title %} w3-blue {% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
 	{% endif %}
 	{% endfor %}
-	<a class=" w3-hover-green btn" href="http://dl.mazdatweaks.win">Download</a>
+	<a class=" w3-hover-green" href="http://dl.mazdatweaks.win">Download</a>
 	<a class=" w3-hover-green" href="//trevelopment.win/mazda3revolutionthread">Thread</a>
 	<s><a class=" w3-hover-red" href="//trevelopment.win/githubsite">GitHub</a></s>
 	<a href="/screenshots" class="w3-hover-green">Screenshots</a>
 	<a href="/videoplayer" class="w3-hover-green">VideoPlayer Info</a>
 	<a href="/speedo" class="w3-hover-green">Speedometer Info</a>
 	<a href="/castscreen" class="w3-hover-green">CastScreen-Receiver</a>
-<a href="/androidauto" class="w3-hover-green">Android Auto</a>
 	<!--a class=" w3-hover-green" href="./faq/"></a-->
 </nav>
 {% if page.title == "Changelog" %}
@@ -54,7 +53,6 @@
       <a href="/videoplayer" class="w3-bar-item">VideoPlayer Info</a>
       <a href="/speedo" class="w3-bar-item">Speedometer Info</a>
       <a href="/castscreen" class="w3-bar-item">CastScreen-Receiver</a>
-	  <a href="/androidauto" class="w3-bar-item">Android Auto</a>
   </div>
 
 					</ul>
@@ -88,6 +86,6 @@
 
 					<a href="//trevelopment.win/mazda3revolutionthread" class="btn">Mazda3Revolution</a>
 
-					<s><a href="//trevelopment.win/githubsite" class="btn">View on GitHub</a><br></s>
+					<s><a href="{{ site.project_page }}" class="btn">View on GitHub</a><br></s>
 
 				</section>

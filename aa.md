@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Android Auto
 permalink: /androidauto/
 ---
 
@@ -37,6 +38,7 @@ _Beta releases will have 1 or more features from the next version but official r
 [v1.04](https://trevelopment.win/aa104)<br>
 [v1.05](https://trevelopment.win/aa105)<br>
 [v1.06](https://trevelopment.win/aa106)<br>
+[v1.06b](https://trevelopment.win/aa106b)(Car GPS disabled)<br>
 [v1.07](https://trevelopment.win/aa107)<br>
 [Mirror for v1.05b, v1.06 & v1.06b](https://trevelopment.win/aa-mirror105b)<br>
 [Another Mirror for v1.06](https://trevelopment.win/aa-megamirror106)<br>

@@ -19,8 +19,8 @@ url: "https://mazdatweaks.com"
 #port: 4000
 github_username:  Trevelopment
 github_username2: Siutsch
-project_page: "https://github.com/Trevelopment/MZD-AIO-TI/"
-version: "2.0.5"
+project_page: "https://github.com/Trevelopment/MZD-AIO/"
+version: "2.7.2"
 # Build settings
 markdown: kramdown
 

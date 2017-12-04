@@ -42,7 +42,7 @@ Included Translator & Photo-Joiner (for background rotator tweak)
 ### Special thanks to all the developers out there that made this possible!
 
 ### And of course, Thanks to @Siutsch for [AIO 1.x][1]
-
+<!--
 -----
 ##### DUE TO A [DMCA TAKEDOWN](http://trevelopment.win/DMCA) ALL FILES ASSOCIATED WITH THE SPEEDCAM PATCH, NNG, IGO AND ANY NAVIGATION PATCHING TOOLS ARE NO LONGER AVAILABLE WITH MZD-AIO-TI.
 ##### This will allow for continued development of this project without infringing on the copyrights of NNG Kft. and potentially causing the company to target developers and/or users to sue for Copyright Infringement.   
@@ -51,23 +51,30 @@ Included Translator & Photo-Joiner (for background rotator tweak)
 **Thank you for your cooperation reguarding these matters**
 
 #### ~Trez
-___
+___ -->
 
+___
 ## [CHANGELOG]
 
 ### NEW FEATURES
-## In 2.6.x
+## v2.7.x
+- Android Auto Headunit 1.07 + [AA Info & Updates](/androidauto)
+- VideoPlayer v3.1 w/ Options/Info Panel
+- AIO Tweaks App v0.4
+- Speedometer v4.8
+
+## v2.6.x
 - Autorun scripts for testing and recovery
 - ID7_Recovery Pack for recovering access to the CMU
 - AIO Tweaks App
 - Speedometer upgrades
-- Extended compatibility to al v55, v56, v58 and v59 FW versions
+- Extended compatibility to all v55, v56, v58 and v59 FW versions
 - USB Audio Mod
 - Full width titles
 - Hide Album Art
 - Hide Background Overlays
 
-## In 2.5.x
+## v2.5.x
 - Video Player v2.9 w/ localStorage Saving
 - Custom Boot Animations
 - New ScreenCast App for Android 7.0
@@ -77,14 +84,14 @@ ___
 - Choice of Android Auto Version to install (v0.99 or v1.02)
 - Video Player v2.8 rollback version in downloads menu for those with Unicode character issues.
 
-## In 2.4.x
+## v2.4.x
 - Video Player v2.8 w/ Multicontroller functionality
 - New themes
   - Smooth Azure
   - Smooth Violet
 - Update SSH Bringback
 
-## In 2.3.x
+## v2.3.x
 - Video Player v2.7
 - Android Auto v1.02
 - Remove List Beep
@@ -92,7 +99,7 @@ ___
 - 6 New Themes
 - Custom Theme Support
 
-## In 2.2.x
+## v2.2.x
 - User Interface Style Tweaks (UI Style)
  - Set Music Song Title Color
  - Set Music Artist Color
@@ -110,7 +117,7 @@ ___
  - Set amount of time for each image to show.   
 - Backup Options
 
-## In 2.1.x:
+## v2.1.x:
 - Statusbar Tweaks
  - Set App Name Color
  - Set Clock Color
@@ -582,24 +589,26 @@ You have to place your videos in a folder "Movies"!
 
 ## **Android Auto Headunit App**
 
-#### V0.93A (2016-07-29) by spadival / agartner (use with google Android App)
+#### Contributors: spadival, agartner, lmagder, mishaaq & Trezdog44
 
-#####   Known issues:
+#### [Changelog Since v1 & More Headunit Info](/androidauto)
+- [Latest AA Release](http://aa.mazdatweaks.win)
+- [Latest AA W/ Beta Features](http://aabeta.mazdatweaks.win) (if there is one)
 
--    Phone bluetooth not functioning (disable bluetooth on car/phone)
-
- - <http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/121561-android-auto-headunit-app-beta.html>
- - <https://github.com/spadival/headunit/releases>
- - <https://github.com/gartnera/headunit/releases/tag/v0.91B>
+- [Headunit Repository](https://trevelopment.win/aarepo)
+    - <https://github.com/gartnera/headunit/releases>
+- [mazda3revolution thread](https://trevelopment.win/aafix).
+    - <http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/121561-android-auto-headunit-app-beta.html>
+ -
 
  1. Install Android Auto app on your phone: <https://play.google.com/store/apps/details?id=com.google.android.projection.gearhead> or here: <https://www.apkmirror.com/apk/google-inc/android-auto/android-auto-1-5-100945-2462389-release-release/android-auto-1-5-100945-2462389-release-android-apk-download/>
- 2. Connect the phone to USB (*) and pair the phone bluetooth with the CMU
- 3. Click on Android Auto under Applications Menu on the CMU
- 4. A black screen with credits should open up first
- 5. Android Auto will then start. If it does not, pull out the USB and start over again (or check the installation.)
+ 2. Pair the phone Bluetooth with the CMU
+ 3. Connect the phone to USB
+ 4. Android Auto will then start. If it does not, pull out the USB and start over again
+ 5. Press 'Home' button to return to MZD GUI
+ 3. Click on Android Auto under Applications Menu on the CMU to reopen Android Auto
 
- _**NOTE: If you are using USB Audio for sound, You can only connect your phone after car has started and the CMU has booted up. If anything is connected, the source ids change and the headunit app is not yet designed to handle that**_
-
+ ---
 ##### Version 0.93A Change log
 
  -    Working again with newer google play services
