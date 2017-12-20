@@ -54,7 +54,7 @@ order: 3
 
 >  If you are using a Mac or Mac formatted thumb drive make sure there are no hidden files on the drive.   
    The drive should be formatted Fat 32 on a PC if possible.   
-   [Look here](https://www.reddit.com/r/mazda3/comments/3d5lvr/mazda_infotainment_update/ctls5ef)
+   [Look here](//www.reddit.com/r/mazda3/comments/3d5lvr/mazda_infotainment_update/ctls5ef)
 
 ---
 

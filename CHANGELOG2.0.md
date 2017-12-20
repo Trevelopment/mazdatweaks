@@ -5,7 +5,7 @@ permalink: /changelog2/
 order: 4
 ---
 
-# MZD-AIO-TI 2.x.x CHANGELOG  [![Download](https://api.bintray.com/packages/trevelopment/AIO-Updates/MZD-AIO-TI/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win)
+# MZD-AIO-TI 2.x.x CHANGELOG  [![Download](//api.bintray.com/packages/trevelopment/AIO-Updates/MZD-AIO-TI/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win)
 
 ##### FOR [AIO v1.x.x CHANGELOG](/CHANGELOG) or visit [MazdaTweaks.com]
 [Full Changelog](changelog.htm)   
@@ -332,7 +332,7 @@ ___
 - Added Compatible Firmware: v56.00.403A-JP
 - SSH Bringback
  - Compatibility extended to all FW v56.00.511 - 59.00.443 (Prior to v56.00.511 SSH is already enabled)
- - New user/password will persist through firmware upgrade. [For More Information View This Infotainment Project Thread](https://trevelopment.win/SSHBringback)
+ - New user/password will persist through firmware upgrade. [For More Information View This Infotainment Project Thread](//trevelopment.win/SSHBringback)
   - New User: cmu
   - Password: jci
  - *New Username and Password will only apply to installations from this point on*
@@ -405,7 +405,7 @@ __Mix and Match Themes with Main Menu Layouts.__
 _Pro Tip -_ Install partial color scheme by deleting some of the images before installing.  
 ##### Custom Theme Support
 - Download any premade theme and use with MZD-AIO-TI
- - Download from: [List of MZD Themes](https://trevelopment.win/MZD-themes)
+ - Download from: [List of MZD Themes](//trevelopment.win/MZD-themes)
  - Forum: [Corwin9s's Themes for MZD Connect](http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/186218-corwin9s-s-themes-mzd-connect.html)
 - Install your own custom made theme
 
