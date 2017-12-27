@@ -1,9 +1,9 @@
 <div class="downloads">
-# **MZD-AIO-TI 2.7.2** [ ![MZD-AIO-WIN](//api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
+# **MZD-AIO-TI {{site.version}}** [ ![MZD-AIO-WIN](//api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
  **32bit Windows** [![MZD-AIO-32-BIT](//api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI)](http://dl32.mazdatweaks.win "32-BIT-MZD-AIO-TI")
-**Mac OSX:** [ AIO v2.7.2 OSX ](http://mac.mazdatweaks.win "AIO v2.7.2 Dmg Package for Mac OSX")
+**Mac OSX:** [ AIO v{{site.version}} OSX ](http://mac.mazdatweaks.win "AIO v{{site.version}} Dmg Package for Mac OSX")
 **Linux:**
-[ AIO v2.7.2 Linux (deb) ](http://deb.mazdatweaks.win "AIO v2.7.2 Deb Package for Linux")
+[ AIO v{{site.version}} Linux (deb) ](http://deb.mazdatweaks.win "AIO v{{site.version}} Deb Package for Linux")
 </div>
 ## MZD All In One tweaks Installer
 
