@@ -5,7 +5,7 @@ permalink: /faq/
 order: 3
 ---
 
-## AIO FAQ  -  2017-05-22
+## AIO FAQ  -  2018-01-20
 
 
 **How can I get these awesome tweaks on my Infotainment System?**
@@ -28,11 +28,16 @@ order: 3
 
 **Is AIO compatible with my FW version?**
 
->  Since Ver. 2.6 **AIO IS COMPATIBLE WITH ALL FW V55, V56, V58, AD V59 up to V59.00.502**
+>  Since Ver. 2.6 **AIO IS COMPATIBLE WITH ALL FW V55, V56, V58, AD V59 up to V59.00.500**
+
+> AIO is also compatible with version 59.00.502 - 59.00.550 **ONLY IF YOU HAVE DONE THE NECESSARY STEPS TO ENABLE TWEAKS INSTALLATION ([Read This Thread For More Info](https://trevelopment.win/im-super-serial))**
+
+>  **This can be done by installing autorun & recovery scripts before updating**
+
+>  **If you never had an earlier FW then the only way to gain access right now is to [via serial connection](https://trevelopment.win/in-super-serial)**
+
 >  <a href="#" class="supported-fw-btn">All Compatible Firmware Versions Are Listed Here.</a>
 >  AIO will read out your FW version at beginning of installation, if it's not compatible the installation will abort.
->
->  Since Ver 2.5 AIO will prompt to make a jci backup and give instructions on where to send it to test for compatibility if incompatible firmware version is detected.
 
 ---
 
@@ -47,6 +52,7 @@ order: 3
 * **59.00.326A/330A/342A/442A/443C/449A/450A-ADR(4A N)**
 * **59.00.330A/441A/443A/446A/450A-NA(N NA)**
 * **59.00.330A/331A/443C/447A/449A-EU**
+* **59.00.502A/504A/532A-NA/-EU/-ADR
 
 ---
 
@@ -60,7 +66,7 @@ order: 3
 
 **How long does it take till the installation starts?**
 
->  This can take from 30 seconds to 5 minutes.  Certain factors can delay the start so be patient.
+>  This can take from 30 seconds to 20 minutes.  Certain factors can delay the start so be patient.
 
 ---
 
@@ -90,6 +96,33 @@ order: 3
 
 ---
 
+**What is "autorun & recovery?"**
+
+> Autorun & recovery are a set of scripts that will automatically regain SSH access and allow for tweaks to be installed when updating to firmware v59.00.502+ or [after gaining serial access](https://trevelopment.win/im-super-serial).  The recovery script lies dormant until it detects it is needed then runs automatically in the background without you even noticing that it is fixing the issue.  
+
+---
+
+**Is it one time installation or needs do be done every time before firmware upgrade?  Does it need to be installed separately or can be done with other tweaks at the same time?**
+
+> They only need to be installed once separately from tweaks then you can forget about it and it will do its magic when the time comes.  You don't even need to reinstall the scripts after updating, they will persist through firmware updates and will automatically run and repair your system after the update is complete.
+
+---
+
+**What are the other options under autorun? Do I need them?**
+
+> There are a few extras you can install with the autorun script Auto WiFi AP, Auto ADB, and Dryrun. You don't need any of these for the recovery scripts to work these are just additional ways to test/access your system.
+> * _Dryrun:_ is only for testing the installation is successful, you only need it the first time you install then you can delete it.
+> * _Auto WiFi AP:_ Starts a WiFi AP (Access Point) coming from your CMU.  You have to set the SSID and Password used to connect just like you would a router.  If you dont set them it will not work.
+> * _Auto ADB:_ This one is my favorite, on boot it starts an adb reverse port from 2222 to port 22 that can be used by any android device (with developer mode activated) to connect directly to the CMU via
+>   * `SSH --host:localhost --port=2222`
+
+---
+
+**Can tweaks be installed after running the recovery script?**
+>  You can do everything normally after installing the autorun & recovery scripts.  You will not even notice them, you can just forget about them and rest easy, they will be ready when you need them.
+
+---
+
 **If something goes wrong, how can I help you to help me?**
 
 >  During installation/uninstalling, a log file is created (AIO_log.txt) and some additional files will be copied on the USB drive.   
@@ -107,8 +140,8 @@ order: 3
 **If I want to go back to original state but I forgot the tweaks I've installed, what can I do?**
 
 >  It doesn't matter if you choose tweaks for uninstalling that you haven't installed.  AIO is designed to discover and revert only the changes that have been made by AIO with a few necessary exceptions.  Uninstalling all tweaks (and choosing default color scheme and background) will revert your system back to the default state.  Any changes made outside of AIO are your own responsibility.
->
-> **NOTE:** Since AIO Ver. 2.5 you can find a 'Full Restore' script by typing **fullrestore** (one word) into the tweak filter text area on the top right of the app or from the left side pop-out navigation menu.  This script is optimized to directly target all the files that AIO modifies and revert them with an option to also remove all backup files created by AIO.
+>  There is also a "Full Restore" tweak that can be accessed through the dropdown nest to the Start Compilation button or the side menu.  You can use the to safely revert your system to "stock."
+> A third option is in the AIO Tweaks App.  Choose the "System Restore" option and your system will be restored EXCEPT for the default Red color theme file, that you mush revert with AIO by selecting the "Custom Infotainment Colors" Tweak and Red (Default) Option.
 
 ---
 
@@ -140,19 +173,6 @@ order: 3
 /jci/scripts/jci-wifiap.sh start
 ```    
    Then the access point of the car is running, you should see a WLAN "cmu ...". Simply log in and then access via IP 192.168.53.1 on the system.
-
----
-
-**If I run the map updates on the Mazda Toolbox software will it overwrite any of the tweaks or cause issues?**
-
->  No. ~~But before you can use Mazda Toolbox you have to delete speedcam.txt/speedcam.spdb from SD-card (when you have installed speedcam-patch).~~   
-   ~~After updating, you can copy the files again.~~
-
----
-
-**What happened to the SpeedCam Patch Tweak?**
-
-> A few of our developer friends in the Mazda Online community and I were served DMCA Takedown notices on our github repositories by NNG for navigation files that have been copyrighted by the company.  As a result all files that have to do with navigation are no longer available in AIO.
 
 ---
 
@@ -214,11 +234,11 @@ order: 3
 
 > You have to manually switch the audio channel to USB (or Bluetooth) and play a silent audio track or pause the audio to play the audio from the video by itself.  The VideoPlayer app uses a separate audio channel but shares the volume so the active Mazda audio channel needs to be paused or silent.
 
-> __TIP:__ **If audio is playing on the USB channel already** When opening the Video Player from the app menu, quickly press the Audio button (left button next to home on the main button panel).  You have to hit it very quickly, like almost at the same time middle-button>audio-button, if you have done it correctly the music will be paused and you can press back and continue playing a video.  This is due to the fact that certain commands (ie. pause/play) can only be called from the proper context (ie. music player app) so there is no way (*yet that I have found) to pause the USB music (or switch audio channels) from the VideoPlayer app.  I put the command to pause audio right at the beginning of the video player app code so this way we can switch contexts quickly enough for the command to run as we switch. Entering the proper context as the command executes, the music is effectively paused, then press back and start a video. Executing the command in the wrong context does nothing which is why you have never noticed it before.
+> __TIP:__ **If audio is playing on the USB channel already** When opening the Video Player from the app menu, press the Entertainment (Audio) button to pause the music player.  This will only work once before playing the first video then the button will function normally.
 
 ---
 
-**In entertainment window, pause-on-mute works perfectly. But if you leave from the entartainment window, "mute" mutes sound but does not pause the song.**
+**In entertainment window, pause-on-mute works perfectly. But if you leave from the entertainment window, "mute" mutes sound but does not pause the song.**
 
 >  This behavior is correct and as expected.  The pause command will not reach the player if you are in any other app/menu.
 
@@ -260,21 +280,24 @@ order: 3
 
 ---
 
-**Why are there 2 versions of Android Auto?**
+**Whats Up With Android Auto Headunit App?**
 
->  **Android Auto is an ongoing development** by many developers all around the world.  At a certain point in its development the code was refactored to allow a better connection between the phone and the CMU, as a result a bug emerged that would drop every incoming call so a fix was developed to reroute phone calls back to the phone, this is now the less severe 'Bluetooth-call bug' that exists in AA ver.1.02.  
-> **Before this point calls could be made with the native Mazda Bluetooth calling interface** and once a call was connected AA would display the connected call (and often freeze), so the Android Auto calling interface was never in a fully working state.  AA v0.99 is the last version that AIO offered that allowed for calls to be made with the Mazda Bluetooth calling interface.  
-> **Although AA v1.02 contains the 'Bluetooth-call bug' it is overall much more stable than AA v0.99.** In fact many bugs and issues were resolved more easily mostly due to the change that led to the bug being introduced in the first place.  Developers are continuing to work on fixing the bug and ask that users don't report issues and bugs from v0.99 as they have already been addressed.  
-Also, before giving up on connecting AA v0.99 try 3 or 4 times because it takes an average or 3 tries to get it started.  
-AA v1.02 will automatically start with no problem when a compatible phone with the Android Auto app installed is plugged in.  
+>  **Android Auto Headunit App for MZD is an ongoing development** by many developers all around the world.  The project was forked from a fully reverse engineered AA headunit app by the late great Mike Reid and ported to the MZD infotainment system where it underwent development by some extremely talented developers.  The Mazda community waited for an official version to come out but was met with empty promises, driving a few determined hackers to create a fully working version first. As of now [Android Auto Headunit App ver.1.08](http://aa.mazdatweaks.win) is free of major bugs and works as it should well before an official version was released... if that ever even happens.
 
-**Hpow Can I contribute to Android Auto development?**
+---
+**How Can I contribute to Android Auto development?**
+> Visit the [headunit repository on Github](https://trevelopment.win/aarepo "Android Auto Headunit Repository")
 > Check this out: [How to Set up the Android Auto Headunit Development Environment and Emulator in an Ubuntu Virtual Machine running on Windows in under 1 Hour](/androidauto "Tutorial: Run Android Auto In An Ubuntu VM")
+
+---
+
+**What about Apple Car Play**
+> As far as I know there are no community projects involving Car Play and the MZD system and I wouldn't hold my breath waiting for Mazda to release an official version any time soon (or ever).  Personally I will never own an iPhone because Androids are far superior although I don't hate apple or anything, I do have a Mac as one weapon in my computer arsenal.  Having said that, even if this project existed I probably could not contribute due to my lack of iPhone... Sorry.
 
 ---
 
 **Can you write this or that tweak for us?**
 
->  By now I have studied the inner workings of the Infotainment System so well I could probably go work for Johnson Controls or Visteon.  There are still things that are very tricky, dangerous and/or impossible to pull off but if you have an idea [Shoot me an email](mailto:trez@mazdatweaks.com?subject=Tweak%20Request) and I will give it a shot.
+>  By now I have studied the inner workings of the Infotainment System so well I could probably go work for Johnson Controls or Visteon.  There are still things that are very tricky, dangerous and/or impossible to pull off but if you have an idea [Shoot me an email](mailto:trez@mazdatweaks.com?subject=Tweak%20Request) and I will give it a shot **(Except Car Play, _PLEASE DO NOT REQUEST CAR PLAY!!_)**
 
 ---
