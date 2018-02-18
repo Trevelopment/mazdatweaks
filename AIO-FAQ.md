@@ -28,31 +28,16 @@ order: 3
 
 **Is AIO compatible with my FW version?**
 
->  Since Ver. 2.6 **AIO IS COMPATIBLE WITH ALL FW V55, V56, V58, AD V59 up to V59.00.500**
+>  **AIO IS COMPATIBLE WITH ALL FW V55, V56, V58, AD V59 up to V59.00.500**
 
-> AIO is also compatible with version 59.00.502 - 59.00.550 **ONLY IF YOU HAVE DONE THE NECESSARY STEPS TO ENABLE TWEAKS INSTALLATION ([Read This Thread For More Info](https://trevelopment.win/im-super-serial))**
+> **AIO is also compatible with version 59.00.502 - 59.00.550 ONLY IF YOU HAVE DONE THE NECESSARY STEPS TO ENABLE TWEAKS INSTALLATION ([Read This Thread For More Info](https://trevelopment.win/im-super-serial))**
 
 >  **This can be done by installing autorun & recovery scripts before updating**
 
->  **If you never had an earlier FW then the only way to gain access right now is to [via serial connection](https://trevelopment.win/in-super-serial)**
+>  **If you never had an earlier FW then the only way to gain access right now is to [via serial connection](https://trevelopment.win/im-super-serial)**
 
 >  <a href="#" class="supported-fw-btn">All Compatible Firmware Versions Are Listed Here.</a>
 >  AIO will read out your FW version at beginning of installation, if it's not compatible the installation will abort.
-
----
-
-**What FW versions are out there?**
-
->  These are the known Firmware versions:
-* **55.00.650A/753A/760A / 56.00.521A-NA(NA N)**
-* **56.00.100A/230A/240B/511A/512A/513C/514A-ADR(4A N)**
-* **56.00.100A/210A/230A/511A/512A/513A/513B/513C-EU**
-* **56.00.401A/403A-JP / 59.00.445A-JP / 56.00.100A-CHN**
-* **58.00.250A-NA(NA N) / 58.00.251A-ADR(4A N)**
-* **59.00.326A/330A/342A/442A/443C/449A/450A-ADR(4A N)**
-* **59.00.330A/441A/443A/446A/450A-NA(N NA)**
-* **59.00.330A/331A/443C/447A/449A-EU**
-* **59.00.502A/504A/532A-NA/-EU/-ADR
 
 ---
 
@@ -66,7 +51,7 @@ order: 3
 
 **How long does it take till the installation starts?**
 
->  This can take from 30 seconds to 20 minutes.  Certain factors can delay the start so be patient.
+>  This can take **from 30 seconds to 20 minutes**.  Certain factors can delay the start so be patient.
 
 ---
 
@@ -114,7 +99,7 @@ order: 3
 > * _Dryrun:_ is only for testing the installation is successful, you only need it the first time you install then you can delete it.
 > * _Auto WiFi AP:_ Starts a WiFi AP (Access Point) coming from your CMU.  You have to set the SSID and Password used to connect just like you would a router.  If you dont set them it will not work.
 > * _Auto ADB:_ This one is my favorite, on boot it starts an adb reverse port from 2222 to port 22 that can be used by any android device (with developer mode activated) to connect directly to the CMU via
->   * `SSH --host:localhost --port=2222`
+>   * `SSH --host=localhost --port=2222`
 
 ---
 
@@ -173,7 +158,7 @@ order: 3
 /jci/scripts/jci-wifiap.sh start
 ```    
    Then the access point of the car is running, you should see a WLAN "cmu ...". Simply log in and then access via IP 192.168.53.1 on the system.
-
+   The AIO Tweaks App also had a Start Wifi AP button, this is the easiest way to start it.
 ---
 
 **Why did my compass stop working?**
