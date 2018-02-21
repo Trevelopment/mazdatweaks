@@ -35,24 +35,24 @@ permalink: /androidauto/
 [Latest AA W/ Beta Features](http://aabeta.mazdatweaks.win) (if there is one)
 ##### Old Versions
 _Beta releases will have 1 or more features from the next version but official releases will have more stable code._<br>
-[v1.04](https://trevelopment.win/aa104)<br>
-[v1.05](https://trevelopment.win/aa105)<br>
-[v1.06](https://trevelopment.win/aa106)<br>
-[v1.06b](https://trevelopment.win/aa106b)(Car GPS disabled)<br>
-[v1.07](https://trevelopment.win/aa107)<br>
-[Mirror for v1.05b, v1.06 & v1.06b](https://trevelopment.win/aa-mirror105b)<br>
-[Another Mirror for v1.06](https://trevelopment.win/aa-megamirror106)<br>
-[Mirror for v1.07](https://trevelopment.win/aamirror107)<br>
+[v1.04](//trevelopment.win/aa104)<br>
+[v1.05](//trevelopment.win/aa105)<br>
+[v1.06](//trevelopment.win/aa106)<br>
+[v1.06b](//trevelopment.win/aa106b)(Car GPS disabled)<br>
+[v1.07](//trevelopment.win/aa107)<br>
+[Mirror for v1.05b, v1.06 & v1.06b](//trevelopment.win/aa-mirror105b)<br>
+[Another Mirror for v1.06](//trevelopment.win/aa-megamirror106)<br>
+[Mirror for v1.07](//trevelopment.win/aamirror107)<br>
 
-For more information visit the [Headunit Repository](https://trevelopment.win/aarepo)
-or visit [this mazda3revolution thread](https://trevelopment.win/aafix).
+For more information visit the [Headunit Repository](//trevelopment.win/aarepo)
+or visit [this mazda3revolution thread](//trevelopment.win/aafix).
 
 ---
 # How To Run **Android Auto** In Ubuntu (Virtual Machine)
 
-## [Windows 10](https://www.microsoft.com/software-download/windows10 "Download Windows 10"), [VirtualBox VM Manager](https://www.virtualbox.org/wiki/Downloads "Download VirtualBox"), [Ubuntu v16.04 64-bit](https://www.ubuntu.com/download "Ubuntu Downloads")
+## [Windows 10](//www.microsoft.com/software-download/windows10 "Download Windows 10"), [VirtualBox VM Manager](//www.virtualbox.org/wiki/Downloads "Download VirtualBox"), [Ubuntu v16.04 64-bit](//www.ubuntu.com/download "Ubuntu Downloads")
 
-## OR just Ubuntu [Ubuntu v16.04 64-bit](https://www.ubuntu.com/download "Ubuntu Downloads") as the main OS.
+## OR just Ubuntu [Ubuntu v16.04 64-bit](//www.ubuntu.com/download "Ubuntu Downloads") as the main OS.
 
 ### **Required Knowledge:**
 **To Run:** Ability to follow these instructions, create a Virtual Machine, use a command line interface, and basic understanding of git and bash shell scripting.   
@@ -82,7 +82,7 @@ Once Ubuntu is all set up this is the complete set of commands to take you from 
 cd ~
 sudo apt-get install git adb bluetooth libbluetooth-dev tlp blueman bluemon bluez libsdl2-2.0-0 libsdl2-ttf-2.0-0 libportaudio2 gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-alsa
 sudo apt-get install libssl-dev libusb-1.0-0-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libsdl1.2-dev libgtk-3-dev libudev-dev libunwind-dev libsdl2-dev libgstreamer-plugins-bad1.0-dev protobuf-compiler
-git clone --recursive https://github.com/gartnera/headunit.git
+git clone --recursive //github.com/gartnera/headunit.git
 sed -i 's/xvimagesink/ximagesink/g' ~/headunit/ubuntu/outputs.cpp # ONLY NEEDED if running on a virtual machine
 cd ~/headunit/ubuntu
 make clean && make
@@ -104,10 +104,10 @@ I hope this will lead to more programmers who did not want to bother installing 
 ![Terminal](/images/AA/terminal.jpg "Terminal")
 
 AA Headunit app repository:
-<https://github.com/gartnera/headunit.git>
+<//github.com/gartnera/headunit.git>
 
 These are the dependencies:
-<https://github.com/gartnera/headunit/tree/master/ubuntu>  
+<//github.com/gartnera/headunit/tree/master/ubuntu>  
 
 {% include_relative AA.html %}
 
@@ -117,7 +117,7 @@ These are the dependencies:
 Now that you have Ubuntu set up and the Mazda arm toolchain installed you can also compile and run the CastScreen-Receiver:
 ```sh
 cd ~
-git clone https://github.com/JonesChi/CastScreen.git
+git clone //github.com/JonesChi/CastScreen.git
 cd CastScreen/receiver && make
 sudo sh ./wait_adb.sh
 reboot

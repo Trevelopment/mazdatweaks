@@ -1,9 +1,9 @@
 <div class="downloads">
-# **MZD-AIO-TI 2.7.2** [ ![MZD-AIO-WIN](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
- **32bit Windows** [![MZD-AIO-32-BIT](https://api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI)](http://dl32.mazdatweaks.win "32-BIT-MZD-AIO-TI")
-**Mac OSX:** [ AIO v2.7.2 OSX ](http://mac.mazdatweaks.win "AIO v2.7.2 Dmg Package for Mac OSX")
+# **MZD-AIO-TI {{site.version}}** [ ![MZD-AIO-WIN](//api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
+ **32bit Windows** [![MZD-AIO-32-BIT](//api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI)](http://dl32.mazdatweaks.win "32-BIT-MZD-AIO-TI")
+**Mac OSX:** [ AIO v{{site.version}} OSX ](http://mac.mazdatweaks.win "AIO v{{site.version}} Dmg Package for Mac OSX")
 **Linux:**
-[ AIO v2.7.2 Linux (deb) ](http://deb.mazdatweaks.win "AIO v2.7.2 Deb Package for Linux")
+[ AIO v{{site.version}} Linux (deb) ](http://deb.mazdatweaks.win "AIO v{{site.version}} Deb Package for Linux")
 </div>
 ## MZD All In One tweaks Installer
 
@@ -15,7 +15,7 @@
 
 ## WHICH FW VERSIONS ARE SUPPORTED?:
 **ALL FW V55, V56, V58, AND V59 UP TO V59.00.504* ARE SUPPORTED**
-* v59.00.502+ has taken away the ability to install tweaks.  For more information [Visit This Tread](https://trevelopment.win/im-super-serial)
+* v59.00.502+ has taken away the ability to install tweaks.  For more information [Visit This Tread](//trevelopment.win/im-super-serial)
 
 ---
 
@@ -233,7 +233,7 @@ _**Compatibility will be generally checked at the beginning of an installation, 
 - Based on mod by Trookam (which is based on mod by anderml1955 I think), first version of speedometer by serezhka, mph changes first done by windwalker
 - <http://www.mazda6-forum.info/index.php?page=Thread&postID=329244#post329244>
 
-- <https://dl.orangedox.com/pbnRlEewGyqUJ3lBvn>
+- <//dl.orangedox.com/pbnRlEewGyqUJ3lBvn>
 - <http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/57714-infotainment-project-373.html#post1537450>
 
 - <http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/57714-infotainment-project-384.html#post1548834>
@@ -304,7 +304,7 @@ You have to place your videos in a folder "Movies"!
 #### v1.0, v2.1 and v2.2 by Diginix, base by ForeverYoung (icons and date smaller just above the clock)
 #### v3.3 MODED for v59 by Trezdog44
 
-- <https://dl.orangedox.com/Vlyi3jrJIPfOdFiRFc>
+- <//dl.orangedox.com/Vlyi3jrJIPfOdFiRFc>
 - <http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/57714-infotainment-project-370.html#post1533778>
 
 
@@ -389,7 +389,7 @@ You have to place your videos in a folder "Movies"!
 - <http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/117162-media-flac-support-track-ordering.html>
 - <http://dl.free.fr/getfile.pl?file=/rfIWhre7>
 - <http://dl.free.fr/getfile.pl?file=/giB5cD8i> (newer version?)
-- <https://mega.nz/#!DURwjLbL!UMO6XuasECekgJKpp7CUejsm9jqd9_2yn74ny_fbHR8>
+- <//mega.nz/#!DURwjLbL!UMO6XuasECekgJKpp7CUejsm9jqd9_2yn74ny_fbHR8>
 
 - FLAC support seems to be limited to max 2GB for music files!
 ***
@@ -423,7 +423,7 @@ You have to place your videos in a folder "Movies"!
 
 #### ~~Speedcam.txt for Germany or Europe, with or without mobile cameras (4 different databases!)~~
 
-- ~~<https://github.com/diorcety/mazda3/wiki/NNG-Speedcam-patching>~~
+- ~~<//github.com/diorcety/mazda3/wiki/NNG-Speedcam-patching>~~
 - ~~<http://poiplaza.com/index.php?p=download&d=788&lstpg2=sdb&lstpg=ds&lsts=616>~~
 
 #### ~~NGG-Patcher for Windows~~
@@ -432,7 +432,7 @@ You have to place your videos in a folder "Movies"!
 
 - ~~<http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/112465-sd-card-cloning-tutorial-13.html#post1581778>~~
 
-- ~~<https://mega.nz/#!DURwjLbL!UMO6XuasECekgJKpp7CUejsm9jqd9_2yn74ny_fbHR8>~~
+- ~~<//mega.nz/#!DURwjLbL!UMO6XuasECekgJKpp7CUejsm9jqd9_2yn74ny_fbHR8>~~
 
 ***
 
@@ -595,13 +595,13 @@ You have to place your videos in a folder "Movies"!
 - [Latest AA Release](http://aa.mazdatweaks.win)
 - [Latest AA W/ Beta Features](http://aabeta.mazdatweaks.win) (if there is one)
 
-- [Headunit Repository](https://trevelopment.win/aarepo)
-    - <https://github.com/gartnera/headunit/releases>
-- [mazda3revolution thread](https://trevelopment.win/aafix).
+- [Headunit Repository](//trevelopment.win/aarepo)
+    - <//github.com/gartnera/headunit/releases>
+- [mazda3revolution thread](//trevelopment.win/aafix).
     - <http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/121561-android-auto-headunit-app-beta.html>
  -
 
- 1. Install Android Auto app on your phone: <https://play.google.com/store/apps/details?id=com.google.android.projection.gearhead> or here: <https://www.apkmirror.com/apk/google-inc/android-auto/android-auto-1-5-100945-2462389-release-release/android-auto-1-5-100945-2462389-release-android-apk-download/>
+ 1. Install Android Auto app on your phone: <//play.google.com/store/apps/details?id=com.google.android.projection.gearhead> or here: <//www.apkmirror.com/apk/google-inc/android-auto/android-auto-1-5-100945-2462389-release-release/android-auto-1-5-100945-2462389-release-android-apk-download/>
  2. Pair the phone Bluetooth with the CMU
  3. Connect the phone to USB
  4. Android Auto will then start. If it does not, pull out the USB and start over again

@@ -16,7 +16,7 @@ _**CHANGES/NEWS:**_
 
 - Tried to integrate an automatic update function (hope it works on every Windows version out there)
 
-  * i use aria2 ( https://aria2.github.io ) for that, so if your firewall complains aria2c.exe, you have to allow it
+  * i use aria2 ( //aria2.github.io ) for that, so if your firewall complains aria2c.exe, you have to allow it
 
   * how does this work: file 'AIO_update.txt' will be downloaded from google drive, evaluated and if there is an update, a zip file with changes will be downlaoded and unzipped automatically
 
