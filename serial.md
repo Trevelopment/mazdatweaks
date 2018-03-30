@@ -6,12 +6,12 @@ permalink: /serial/
 
 # **CMU Serial Access**
 
-**In FW v59.00.502 and higher the CMU is locked down and users cannot access to their own systems and can no longer install tweaks.**  Currently the only way to circumvent this is to make a serial connection and follow these instructions very carefully.  
+**In FW v59.00.502 and higher the CMU is locked down and users cannot access to their own systems and can no longer install tweaks.**  Currently the only way to circumvent this is to make a serial connection and follow these instructions very carefully. This process will allow you to run tweaks from USB.
 
 ### __*A huge Thank You to [Albuyeh](http://www.albuyeh.com/) for writing these detailed instructions.*__
 
 ## Parts/Equipment Needed:
-- [USB to TTL Serial Adapter](https://www.amazon.com/gp/product/B06Y3V9BPL) - $14 (We will be using the CP2102 module) Driver can be found [Here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers). I like this module because it has LEDs when you are receiving or transmitting data
+- [USB to TTL Serial Adapter](https://www.amazon.com/Qunqi-CP2102-Module-Download-Converter/dp/B014PBYER4) - $6 (Any other CP2102 module should work. Other USB-TTL Adapters might work too.) Driver can be found [Here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers). I like this module because it has LEDs when you are receiving or transmitting data
 - Single-Stranded/Solid-core insulated wire. I personally like [this](https://www.amazon.com/Elegoo-EL-CP-004-Multicolored-Breadboard-arduino/dp/B01EV70C78) because you can daisy-chain them together without needing to do any soldering.
 - USB Flash Drive
 - 10mm socket wrench with extender/ratchet
@@ -78,6 +78,7 @@ permalink: /serial/
 4. Attach bolt using 10mm socket wrench
 5. Connect hazard light connector cable to trim
 6. Push trim back in
+7. From here on out, you can just use a flashdrive to install tweaks
 
 ## You're Done!
 
