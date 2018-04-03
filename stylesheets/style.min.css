@@ -32,3 +32,30 @@ p strong {
 	font-weight:400;
 	font-size:1.1rem;
 }
+.copy-msg+ul li {
+    list-style: none;
+    margin-left: 0px;
+}
+.copy-msg+ul li pre{
+    line-height:1;
+}
+.copy-msg+ul li pre input[type=text]{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px dashed grey;
+    border-radius: 0;
+    outline: none;
+    height: 2rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+    padding: 0;
+    box-shadow: none;
+}
+.copy-msg+ul li pre input[type=text]:focus{
+    border-bottom:1px solid white;
+}
+.copy-msg+ul li pre input[type=text]::selection{
+    background:#ff00e0;
+    color:#00ff7d;
+}
