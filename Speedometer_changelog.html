@@ -1,0 +1,92 @@
+<pre class="lang-shell"><code>
+# Update to Waisky2’s addon-all-fixed-auto-install-v2
+# V3.0 - Initial
+# V3.2 - Removed temperatures that did not work right,
+#        added trip fuel economy which is based on cmu trip which does not correspond to speedometer trip <yet>,
+#        changed so all data is rounded which fixed smdb-read speed mismatch to cruse control
+#        enlarged direction text,
+#        cleaned up code
+# V3.21  changed metric display to L per 100km
+#
+# Changes done by diginix:
+# V3.3   added unit under speedometer for mph or km/h
+#        replace dot with comma for L per 100km
+#        optimized speed indicator angles in css
+#        new graphics for rings, needle pointer, dial image with different layout for steps 5,10,20
+#        html and css cleanup
+#        some more layout tuning (e.g. text shadow)
+# V3.4   rotating compass added
+# V3.5   GPS Heading deleted, Latitude & Longitude added
+# V3.6   added analog top speed indicator
+#        small animated GPS speed and direction added in statusbar (toggleable with touch on clock)
+# V3.7   complete new method for data retrieval with websocket
+#        added GPS Altitude min & max
+#        added multilingual support (EN,DE,ES)
+#        added Waisky2’s video player v2
+# V4.0   integrated as native app in menu
+#        new statusbar speedo without animation javascript (better performance)
+#        alternating gps altitude and direction
+# V4.1   added trip distance
+#        added language Polish (thanks to sauron2003 from mazda3revolution.com)
+#        added total fuel efficiency in brackets behind current one
+#        added selection for fuel efficiency unit in user config
+#        some layout improvements
+#        merged some code improvements by vic_bam85
+# V4.2   added readme.txt
+#        added language Slovak (thanks to sedrik7 from mazda3revolution.com)
+#        added language Turkish (thanks to volcano2K from mazda3revolution.com)
+#        added tachometer for engine speed
+#        added second idle time if engine is running but car has no speed (opposite to iStop time)
+#        changed trip distance to 20 meter accuracy (0.02 km)
+#        fixed statusbar speedo overlapping with message icon if 4 icons are visible (BT,WIFI,BATTERY,MESSAGE)
+# V4.3   added percentage display of both idle times
+#        added semi transparent background for value table
+#        added user config for customizing of speedometer background image
+#        added language French (thanks to drean179 and Regg001 from mazda3revolution.com)
+</code></pre><h2 id="speedometer-changelog-since-v5-5-before-that-it-was-2-different-speedometers-">Speedometer Changelog (Since v5.5 before that it was 2 different speedometers)</h2>
+<h4 id="v5-5">v5.5</h4>
+<ul>
+<li>Analog, Modded and Bar Speedometers are now All In One</li>
+<li>All options are available and will be applied to the proper Speedometer</li>
+<li>Choose which speedometer to start with by default (if starting with Bar Speedometer other options will still determine the starting state of the Classic Speedometer)</li>
+<li>The speedometer-config.js file now has all the options, set a variable to determine if override values are used or installed options.</li>
+<li>Invalid Values Show &quot;---&quot; Such As Gear Position/Lever for Manual Transmissions</li>
+<li>Toggles will Show The Action In A Statusbar Notification</li>
+<li>Hold &quot;Up&quot; on multicontroller to switch between Classic and Bar Speedometer Mode</li>
+<li>Hold &quot;Down&quot; in Classic mode to switch between Basic and Modded Speedometer (Basic is only analog with no toggles except long holds to change to Modded or Bar Speedometer)</li>
+<li>Modded Speedometer (in Classic mode):<ul>
+<li>Single click &quot;Up&quot; to increase size of values</li>
+<li>Multicontroller &quot;Select&quot; toggles between Digital and Analog speed</li>
+<li>Single click &quot;Down&quot; to show alternate values</li>
+</ul>
+</li>
+<li>Bar Speedometer:<ul>
+<li>Configure The Amount of Bottom Rows in &quot;speedometer-config.js&quot; (Default 4)</li>
+<li>Hold &quot;Down&quot; to show/hide speed bar</li>
+<li><strong>TAP Any 2 Values To Swap Their Positions!</strong><ul>
+<li>Any Values Can Be Swapped Even The Main</li>
+<li>When The Main Value Is Swapped An SBN Will Show With The Value Name</li>
+<li>Tap Below The Bottom Row To Swap Hidden Values In Other Rows</li>
+<li>Tap Selected Value Again To Cancel</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="v5-6">v5.6</h4>
+<ul>
+<li>Bar Speedometer layout changes are remembered until shutdown<ul>
+<li>Exiting or changing speedometers no longer resets layout to default</li>
+<li>Hold &quot;Select&quot; on the multicontroller to reset to your default layout</li>
+<li>Change Between 5 Configurable Color Themes (hold.left)</li>
+</ul>
+</li>
+<li>Remap Multicontroller Functions <a href="config/speedometer-controls.js">speedometer-controls.js</a><ul>
+<li>All controls are able to be customized in speedometer-controls.js</li>
+</ul>
+</li>
+<li>Custom themes for bar speedometer with CSS (mostly colors but other CSS tweaks can be applied)<ul>
+<li>Set Colors In <a href="config/barThemes.css">barThemes.css</a></li>
+</ul>
+</li>
+</ul>

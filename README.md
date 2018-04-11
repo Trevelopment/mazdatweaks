@@ -1,5 +1,5 @@
 <div class="downloads">
-# **MZD-AIO-TI {{site.version}}** [ ![MZD-AIO-WIN](//api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
+# **MZD-AIO-TI v{{site.version}}** [ ![MZD-AIO-WIN](//api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
  **32bit Windows** [![MZD-AIO-32-BIT](//api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI)](http://dl32.mazdatweaks.win "32-BIT-MZD-AIO-TI")
 **Mac OSX:** [ AIO v{{site.version}} OSX ](http://mac.mazdatweaks.win "AIO v{{site.version}} Dmg Package for Mac OSX")
 **Linux:**

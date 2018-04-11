@@ -81,7 +81,7 @@ Once Ubuntu is all set up this is the complete set of commands to take you from 
 ```sh
 cd ~
 sudo apt-get install git adb bluetooth libbluetooth-dev tlp blueman bluemon bluez libsdl2-2.0-0 libsdl2-ttf-2.0-0 libportaudio2 gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-alsa
-sudo apt-get install libssl-dev libusb-1.0-0-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libsdl1.2-dev libgtk-3-dev libudev-dev libunwind-dev libsdl2-dev libgstreamer-plugins-bad1.0-dev protobuf-compiler
+sudo apt-get install libssl-dev libusb-1.0-0-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libsdl1.2-dev libgtk-3-dev libudev-dev libunwind-dev libsdl2-dev libgstreamer-plugins-bad1.0-dev protobuf-compiler libdbusxx
 git clone --recursive //github.com/gartnera/headunit.git
 sed -i 's/xvimagesink/ximagesink/g' ~/headunit/ubuntu/outputs.cpp # ONLY NEEDED if running on a virtual machine
 cd ~/headunit/ubuntu

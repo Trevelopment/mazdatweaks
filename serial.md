@@ -24,10 +24,17 @@ permalink: /serial/
 ### USB Flash Drive:
 
 1.  Format drive to FAT32
-2.  Create folder called ‘XX’
-3.  Add contents of [this archive](http://albuyeh.com/files/autorun.v3.zip) to folder ‘XX’
-4.  If you want to have the car create its own Wifi Access Point, configure the `XX/00-start-wifiAP/wifiAP.config`file. Otherwise, delete the 00-start-wifiAP folder
-5.  Use AIO app to also install selected tweaks on the same flash drive.
+2.  Using MZD-AIO v2.7.9+: Run "Autorun & Recovery" with "Recovery Via Serial Connection" & "Install ID_7 Recovery Scripts Pack" options checked
+4.  AIO will create the 'XX' Folder and neccessary files in "_copy_to_usb" folder
+5.  AIO will offer to copy files directly to the connected USB Drive
+
+    > Or Do It Yourself:
+    > 1.  Format drive to FAT32
+    > 2.  Create folder called ‘XX’
+    > 2.  Add contents of [this archive](http://albuyeh.com/files/autorun.v3.zip) to folder ‘XX’
+    > 3.  If you want to have the car create its own Wifi Access Point, configure the `XX/00-start-wifiAP/wifiAP.config`file. Otherwise, delete the 00-start-wifiAP folder
+
+- (Optional) Use AIO to also install some selected tweaks on the same USB flash drive to run after completed.
 
 ## Process:
 
