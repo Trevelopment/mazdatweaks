@@ -25,16 +25,17 @@ permalink: /serial/
 
 1.  Format drive to FAT32
 2.  Using MZD-AIO v2.7.9+: Run "Autorun & Recovery" with "Recovery Via Serial Connection" & "Install ID_7 Recovery Scripts Pack" options checked
-4.  AIO will create the 'XX' Folder and neccessary files in "_copy_to_usb" folder
-5.  AIO will offer to copy files directly to the connected USB Drive
+3.  AIO will create the 'XX' Folder and neccessary files in "\_copy_to_usb" folder
+4.  AIO will offer to copy files directly to the connected USB Drive
 
     > Or Do It Yourself:
+    >
     > 1.  Format drive to FAT32
     > 2.  Create folder called ‘XX’
-    > 2.  Add contents of [this archive](http://albuyeh.com/files/autorun.v3.zip) to folder ‘XX’
-    > 3.  If you want to have the car create its own Wifi Access Point, configure the `XX/00-start-wifiAP/wifiAP.config`file. Otherwise, delete the 00-start-wifiAP folder
+    > 3.  Add contents of [this archive](http://albuyeh.com/files/autorun.v3.zip) to folder ‘XX’
+    > 4.  If you want to have the car create its own Wifi Access Point, configure the `XX/00-start-wifiAP/wifiAP.config`file. Otherwise, delete the 00-start-wifiAP folder
 
-- (Optional) Use AIO to also install some selected tweaks on the same USB flash drive to run after completed.
+-   (Optional) Use AIO to also install some selected tweaks on the same USB flash drive to run after completed.
 
 ## Process:
 
@@ -72,16 +73,20 @@ permalink: /serial/
 5.  Now you are really going to be seeing text fly by.
 6.  Press Enter in terminal and CMU will respond with ‘login’. For the next several steps make sure you do not make any spelling mistakes. It is probably best to copy and paste the commands (to paste you just need to right click in the terminal window). **It will seem like your commands are not being sent to the Mazda but don’t worry they are** (_provided your wiring is right_)
 7.  Reboot Mazda CMU by holding the Nav + Mute button for 10+ seconds.
-8.  Input <span onclick="copyCode('usercopy')"><code><input type="text" id="usercopy" value="user" readonly></code></span> and push Enter
-9.  Input `jci` and push Enter
+8.  Input <span class="copy-msg"></span><span class="one-liners"><code><input type="text" id="usercopy" value="user" onclick="copyCode('#usercopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#usercopy').click()" style="font-size:8px">Copy</span>
+9.  Input <span class="copy-msg"></span><span class="one-liners"><code><input type="text" id="jcicopy" value="jci" onclick="copyCode('#jcicopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#jcicopy').click()" style="font-size:8px">Copy</span>
 10. (Optional) Test if serial commands work by running `reboot`.
 11. Run <span class="copy-msg"></span>
-  - <pre><code><input type="text" id="code2copy" value="cp -r /tmp/mnt/sd*/XX/* /tmp/mnt/data_persist/dev/bin/; chmod +x /tmp/mnt/data_persist/dev/bin/autorun" readonly>
-</code> <button class="w3-btn" onclick="copyCode('#code2copy')">Copy</button> </pre>
+
+-   <pre><code><input type="text" id="code2copy" value="cp -r /tmp/mnt/sd*/XX/* /tmp/mnt/data_persist/dev/bin/; chmod +x /tmp/mnt/data_persist/dev/bin/autorun" readonly>
+    </code> <button class="w3-btn" onclick="copyCode('#code2copy')">Copy</button> </pre>
+
 12. (Optional) To test if the files have been moved to the folder, run <span class="copy-msg"></span>
-  - <pre><code><input type="text" id="code2copy2" value="ls -l /tmp/mnt/data_persist/dev/bin" readonly> </code> <button class="w3-btn" onclick="copyCode('#code2copy2')">Copy</button> </pre>
-  - The files/folders should be colored in green/blue since they are folders/executable. You may have to run this a few times to see the Serial Console output. 
-  - ![Output](/images/ls-l_output.png "This is what the output should look like")
+
+-   <pre><code><input type="text" id="code2copy2" value="ls -l /tmp/mnt/data_persist/dev/bin" readonly> </code> <button class="w3-btn" onclick="copyCode('#code2copy2')">Copy</button> </pre>
+-   The files/folders should be colored in green/blue since they are folders/executable. You may have to run this a few times to see the Serial Console output.
+-   ![Output](/images/ls-l_output.png "This is what the output should look like")
+
 13. Remove flash drive, turn off car, insert flash drive that has AIO tweaks installed, turn car on back in ACC mode
 14. After a few minutes, you should see a message that indicates the mods are being installed. This process may take a bit of time. I would recommend doing a JCI Backup first (option under AIO Tweaks App) just in case you mess something up.
 

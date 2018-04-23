@@ -59,3 +59,13 @@ p strong {
     background:#ff00e0;
     color:#00ff7d;
 }
+.one-liners input[type=text]{
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.one-liners .copied-msg{
+  margin: -10px -30px!important;
+  position: absolute;
+  width: 150px;
+}
