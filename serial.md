@@ -47,9 +47,7 @@ permalink: /serial/
 2.  Pull the trim. You will need to use more force than you expect. The front fan area is attached to the trim and will come off as well.
 3.  Disconnect the hazard light connector cable
 4.  Use the 10mm socket wrench to remove the bolt
-
--   ![The Bolt](/images/thebolt.jpg)
-
+	-   ![The Bolt](/images/thebolt.jpg)
 5.  The headunit will slide out towards you
 
 ### Wiring the CMU:
@@ -63,29 +61,24 @@ permalink: /serial/
 ### Serial Console App:
 
 1.  Windows will auto-assign a COM Port to the CP2102 module once its plugged in. Go to Device Manager > Ports (COM & LPT) to see what the COM Port # is
-
--   For SecureCRT, under Options > Connection > Serial, set Port = COM#, Baud = 115200, Data Bits = 8, Parity = None, Stop Bits = 1
--   For Putty, you just need to select ‘Serial’ and then enter the COM Port # and set Baud to 115200
-
+	-   For SecureCRT, under Options > Connection > Serial, set Port = COM#, Baud = 115200, Data Bits = 8, Parity = None, Stop Bits = 1
+	-   For Putty, you just need to select ‘Serial’ and then enter the COM Port # and set Baud to 115200
 2.  You should start see text scroll by even if the car is off
 3.  Plug in flash drive
 4.  Turn the car to ACC mode by just pressing the On button without putting your foot on brake to fully turn car on
 5.  Now you are really going to be seeing text fly by.
 6.  Press Enter in terminal and CMU will respond with ‘login’. For the next several steps make sure you do not make any spelling mistakes. It is probably best to copy and paste the commands (to paste you just need to right click in the terminal window). **It will seem like your commands are not being sent to the Mazda but don’t worry they are** (_provided your wiring is right_)
 7.  Reboot Mazda CMU by holding the Nav + Mute button for 10+ seconds.
-8.  Input <span class="copy-msg"></span><span class="one-liners"><code><input type="text" id="usercopy" value="user" onclick="copyCode('#usercopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#usercopy').click()" style="font-size:8px">Copy</span>
-9.  Input <span class="copy-msg"></span><span class="one-liners"><code><input type="text" id="jcicopy" value="jci" onclick="copyCode('#jcicopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#jcicopy').click()" style="font-size:8px">Copy</span>
+8.  Input <span class="copy-msg"></span><span class="one-liner"><code><input type="text" id="usercopy" value="user" onclick="copyCode('#usercopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#usercopy').click()" style="font-size:8px">Copy</span>
+9.  Input <span class="copy-msg"></span><span class="one-liner"><code><input type="text" id="jcicopy" value="jci" onclick="copyCode('#jcicopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#jcicopy').click()" style="font-size:8px">Copy</span>
 10. (Optional) Test if serial commands work by running `reboot`.
 11. Run <span class="copy-msg"></span>
-
--   <pre><code><input type="text" id="code2copy" value="cp -r /tmp/mnt/sd*/XX/* /tmp/mnt/data_persist/dev/bin/; chmod +x /tmp/mnt/data_persist/dev/bin/autorun" readonly>
+	-   <pre><code><input type="text" id="code2copy" value="cp -r /tmp/mnt/sd*/XX/* /tmp/mnt/data_persist/dev/bin/; chmod +x /tmp/mnt/data_persist/dev/bin/autorun" readonly>
     </code> <button class="w3-btn" onclick="copyCode('#code2copy')">Copy</button> </pre>
-
 12. (Optional) To test if the files have been moved to the folder, run <span class="copy-msg"></span>
-
--   <pre><code><input type="text" id="code2copy2" value="ls -l /tmp/mnt/data_persist/dev/bin" readonly> </code> <button class="w3-btn" onclick="copyCode('#code2copy2')">Copy</button> </pre>
--   The files/folders should be colored in green/blue since they are folders/executable. You may have to run this a few times to see the Serial Console output.
--   ![Output](/images/ls-l_output.png "This is what the output should look like")
+	-   <pre><code><input type="text" id="code2copy2" value="ls -l /tmp/mnt/data_persist/dev/bin" readonly> </code> <button class="w3-btn" onclick="copyCode('#code2copy2')">Copy</button> </pre>
+	-   The files/folders should be colored in green/blue since they are folders/executable. You may have to run this a few times to see the Serial Console output.
+	-   ![Output](/images/ls-l_output.png "This is what the output should look like")
 
 13. Remove flash drive, turn off car, insert flash drive that has AIO tweaks installed, turn car on back in ACC mode
 14. After a few minutes, you should see a message that indicates the mods are being installed. This process may take a bit of time. I would recommend doing a JCI Backup first (option under AIO Tweaks App) just in case you mess something up.

@@ -8,6 +8,7 @@ $(function(){
   });
   $('.page-content a:not(".dl-link")').attr('target','_blank');
   $('h5 a').attr('target','_top');
+  $('.one-liner').parent().addClass('one-liners');
 })
 
 function copyCode(x) {
