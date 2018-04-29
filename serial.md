@@ -23,17 +23,20 @@ permalink: /serial/
 
 ### USB Flash Drive:
 
+#### MZD AIO Method:
 1.  Format drive to FAT32
 2.  Using MZD-AIO v2.7.9+: Run "Autorun & Recovery" with "Recovery Via Serial Connection" & "Install ID_7 Recovery Scripts Pack" options checked
 3.  AIO will create the 'XX' Folder and neccessary files in "\_copy_to_usb" folder
 4.  AIO will offer to copy files directly to the connected USB Drive
 
-    > Or Do It Yourself:
-    >
-    > 1.  Format drive to FAT32
-    > 2.  Create folder called ‘XX’
-    > 3.  Add contents of [this archive](http://albuyeh.com/files/autorun.v3.zip) to folder ‘XX’
-    > 4.  If you want to have the car create its own Wifi Access Point, configure the `XX/00-start-wifiAP/wifiAP.config`file. Otherwise, delete the 00-start-wifiAP folder
+or
+
+#### Manual Method:
+
+1.  Format drive to FAT32
+2.  Create folder called ‘XX’
+3.  Add contents of [this archive](http://albuyeh.com/files/autorun.v3.zip) to folder ‘XX’
+4.  If you want to have the car create its own Wifi Access Point, configure the `XX/00-start-wifiAP/wifiAP.config`file. Otherwise, delete the 00-start-wifiAP folder
 
 -   (Optional) Use AIO to also install some selected tweaks on the same USB flash drive to run after completed.
 
@@ -51,6 +54,8 @@ permalink: /serial/
 5.  The headunit will slide out towards you
 
 ### Wiring the CMU:
+
+**Do not modify any of the below commands** If the commands do not work, then you have done something wrong (i.e. you're not logged in, or RX/TX wires are not properly wired)
 
 1.  You will need to have 3 wires connected to the CMU: Transmit (TX), Receive (RX), and Ground (GND)
 2.  Here is a picture of the back of the CMU. We are going to be adding our cables to the ‘power&more’ connector. Here is a more detailed picture of where the RX and TX cables go.
