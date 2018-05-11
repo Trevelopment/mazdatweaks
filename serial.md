@@ -55,7 +55,7 @@ or
 
 ### Wiring the CMU:
 
-**Do not modify any of the below commands** If the commands do not work, then you have done something wrong (i.e. you're not logged in, or RX/TX wires are not properly wired)
+**Do not modify any of the below commands** If the commands do not work, then you have done something wrong (i.e. you're not logged in, or RX/TX wires are not properly wired) 
 
 1.  You will need to have 3 wires connected to the CMU: Transmit (TX), Receive (RX), and Ground (GND)
 2.  Here is a picture of the back of the CMU. We are going to be adding our cables to the ‘power&more’ connector. Here is a more detailed picture of where the RX and TX cables go.
@@ -71,8 +71,9 @@ or
 2.  You should start see text scroll by even if the car is off
 3.  Plug in flash drive
 4.  Turn the car to ACC mode by just pressing the On button without putting your foot on brake to fully turn car on
-5.  Now you are really going to be seeing text fly by.
-6.  Press Enter in terminal and CMU will respond with ‘login’. For the next several steps make sure you do not make any spelling mistakes. It is probably best to copy and paste the commands (to paste you just need to right click in the terminal window). **It will seem like your commands are not being sent to the Mazda but don’t worry they are** (_provided your wiring is right_)
+5.  Now you are really going to be seeing text fly by, **remember that the commands are working even though you cannot see what you are typing because of the text flying by.**
+6.  Press Enter in terminal and CMU will respond with ‘login’. For the next several steps make sure you do not make any spelling mistakes. It is probably **best to copy and paste the commands** (to paste you just need to right click in the terminal window). 
+    - **If text is flying by so fast it seems like you can't type you are doing everything correctly, copy and paste each command and press enter!  It will seem like your commands are not being sent to the Mazda but don’t worry they are** (_provided your wiring is right. If you got a module with LEDs you can check **TX is Transmit/RX is Receive**_)
 7.  Reboot Mazda CMU by holding the Nav + Mute button for 10+ seconds.
 8.  Input <span class="copy-msg"></span><span class="one-liner"><code><input type="text" id="usercopy" value="user" onclick="copyCode('#usercopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#usercopy').click()" style="font-size:8px">Copy</span>
 9.  Input <span class="copy-msg"></span><span class="one-liner"><code><input type="text" id="jcicopy" value="jci" onclick="copyCode('#jcicopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#jcicopy').click()" style="font-size:8px">Copy</span>
@@ -86,7 +87,7 @@ or
 	-   ![Output](/images/ls-l_output.png "This is what the output should look like")
 
 13. Remove flash drive, turn off car, insert flash drive that has AIO tweaks installed, turn car on back in ACC mode
-14. After a few minutes, you should see a message that indicates the mods are being installed. This process may take a bit of time. I would recommend doing a JCI Backup first (option under AIO Tweaks App) just in case you mess something up.
+14. After a few minutes, you should see a message that indicates the mods are being installed. This process may take approximately 2 - 20 minutes.
 
 ### Finishing Up
 
