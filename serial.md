@@ -36,7 +36,7 @@ or
 1.  Format drive to FAT32
 2.  Create folder called ‘XX’
 3.  Add contents of [this archive](http://albuyeh.com/files/autorun.v3.zip) to folder ‘XX’
-4.  If you want to have the car create its own Wifi Access Point, configure the `XX/00-start-wifiAP/wifiAP.config`file. Otherwise, delete the 00-start-wifiAP folder
+4.  If you want to have the car create its own Wifi Access Point, configure the `XX/00-start-wifiAP/wifiAP.config`file. Otherwise, delete the 00-start-wifiAP folder. If you are trying to remove Wifi AP after you have installed it, copy contents of <a href='https://dl.bintray.com/aio/aio/wifi-ap_uninstall.zip'>Wifi Uninstall Script</a> to flash drive and connect to CMU.
 
 -   (Optional) Use AIO to also install some selected tweaks on the same USB flash drive to run after completed.
 
