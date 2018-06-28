@@ -65,6 +65,8 @@ or
 
 ### Serial Console App:
 
+-   Make sure you know what the paste command is for your Serial Console application. In Putty, you right click inside the terminal window and it will paste whatever command you had copied. For SecureCRT, you push Ctrl+Shift+V to paste. 
+   
 1.  Windows will auto-assign a COM Port to the CP2102 module once its plugged in. Go to Device Manager > Ports (COM & LPT) to see what the COM Port # is
 	-   For SecureCRT, under Options > Connection > Serial, set Port = COM#, Baud = 115200, Data Bits = 8, Parity = None, Stop Bits = 1
 	-   For Putty, you just need to select ‘Serial’ and then enter the COM Port # and set Baud to 115200
