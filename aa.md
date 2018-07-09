@@ -5,7 +5,25 @@ permalink: /androidauto/
 ---
 
 # MZD Headunit App for Android Auto
-##### Updated:<br> ![12/01/2017](/images/updated.png)
+
+## Instructions for Android Auto Wireless Support (v1.09+):
+
+### Initial wireless connection 
+1. <b>PHONE</b>:  Enable Developer Settings on Android Auto 
+2. <b>CAR</b> : Start car
+3. <b>PHONE</b>: Create a personal hotspot
+4. <b>CAR</b> : Connect Wifi to personal hotspot
+
+### Run headunit-wireless 
+5. <b>PHONE</b>: Open Android Auto app and go to "about". Open the menu and tap "Start Head unit Server"
+6. <b>CAR</b>: Android Auto Headunit will start automatically
+
+### Stop
+1. <b>CAR</b>: Exit Headunit
+2. <b>PHONE</b>: Stop Head unit Server. Disable developer mode (options).
+3. <b>CAR</b>: Disconnect personal hotspot
+4. <b>PHONE</b>: disable personal hotspot
+
 #### Changelog since v1.0:
 - v1.03:
   - Bluetooth calling issue resolved with patch to sound config files

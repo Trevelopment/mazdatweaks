@@ -1,10 +1,12 @@
 <div class="downloads">
-# **MZD-AIO-TI v{{site.version}}** [ ![MZD-AIO-WIN](//api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
- **32bit Windows** [![MZD-AIO-32-BIT](//api.bintray.com/packages/trevelopment/MZD-AIO-TI/AIO/images/download.svg?version=MZD-AIO-TI)](http://dl32.mazdatweaks.win "32-BIT-MZD-AIO-TI")
+# **MZD-AIO-TI v{{site.version}}** [ ![MZD-AIO-WIN](/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
+
+ **32bit Windows** [![MZD-AIO-32-BIT](/images/download.svg)](http://dl32.mazdatweaks.win "32-BIT-MZD-AIO-TI")
 **Mac OSX:** [ AIO v{{site.version}} OSX ](http://mac.mazdatweaks.win "AIO v{{site.version}} Dmg Package for Mac OSX")
 **Linux:**
 [ AIO v{{site.version}} Linux (deb) ](http://deb.mazdatweaks.win "AIO v{{site.version}} Deb Package for Linux")
 </div>
+
 ## MZD All In One tweaks Installer
 
 #### Installer for many different system tweaks for Mazda MZD Infotainment System
@@ -30,6 +32,7 @@
 ##### **Anyone who is unsure should leave it alone, ask someone with experience to help or ask in the forum.**
 
 ##### **I am not responsible for damages that may incur from the use.**
+
 ## **Only use with Firmware >= v55.  DO NOT USE with V30/31/33 OR THE SYSTEM WILL BOOTLOOP AT MAZDA BOOT LOGO!!!!!**
 ___
 
@@ -42,16 +45,6 @@ Included Translator & Photo-Joiner (for background rotator tweak)
 ### Special thanks to all the developers out there that made this possible!
 
 ### And of course, Thanks to @Siutsch for [AIO 1.x][1]
-<!--
------
-##### DUE TO A [DMCA TAKEDOWN](http://trevelopment.win/DMCA) ALL FILES ASSOCIATED WITH THE SPEEDCAM PATCH, NNG, IGO AND ANY NAVIGATION PATCHING TOOLS ARE NO LONGER AVAILABLE WITH MZD-AIO-TI.
-##### This will allow for continued development of this project without infringing on the copyrights of NNG Kft. and potentially causing the company to target developers and/or users to sue for Copyright Infringement.   
-**Additionally, no information regarding speedcam or navigation patching will be available or provided through MZD-AIO-TI or any associated developer of MZD-AIO-TI.**
-##### **Uninstall for speedcam patch will be available but is _deprecated_ and will eventually be removed**
-**Thank you for your cooperation reguarding these matters**
-
-#### ~Trez
-___ -->
 
 ___
 ## [CHANGELOG]

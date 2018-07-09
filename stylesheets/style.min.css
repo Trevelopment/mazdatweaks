@@ -69,3 +69,6 @@ p strong {
   position: absolute;
   width: 150px;
 }
+.post-content img {
+    max-height: 300px;
+}
