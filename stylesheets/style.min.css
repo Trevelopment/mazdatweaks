@@ -72,3 +72,7 @@ p strong {
 .post-content img {
     max-height: 300px;
 }
+[id*=aio-code] code {
+    background: black;
+    color: #00ffa3;
+}

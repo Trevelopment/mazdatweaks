@@ -5,10 +5,9 @@ permalink: /changelog2/
 order: 4
 ---
 
-# MZD-AIO-TI 2.x.x CHANGELOG  [![Download](//api.bintray.com/packages/trevelopment/AIO-Updates/MZD-AIO-TI/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win)
+# MZD-AIO-TI 2.x.x CHANGELOG  [![Download](/images/download.svg))](http://dl.mazdatweaks.win)
 
-##### FOR [AIO v1.x.x CHANGELOG](/CHANGELOG) or visit [MazdaTweaks.com]
-[Full Changelog](changelog.htm)   
+[Full Changelog](/changelog)   
 
 ### 2.7.9
 
@@ -850,9 +849,4 @@ _Pro Tip -_ Install partial color scheme by deleting some of the images before i
 
 #### - Built in Translator
  ***
-[Electron]: (//electron.atom.io/)
-[AngularJS]: (https://angularjs.org/)    
-[MazdaTweaks.com]:(//mazdatweaks.com/)
-[NodeJS]: (https://nodejs.org/)
-[Chromium]: (https://www.chromium.org/)
-[1]: (https://github.com/Siutsch/AIO---All-in-one-tweaks)
+[1]: https://github.com/Trevelopment/MZD-AIO

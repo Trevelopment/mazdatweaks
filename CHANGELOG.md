@@ -4,10 +4,6 @@ permalink: /changelog/
 order: 2
 ---
 
-# [Back to README](README.md "README")
-
-# [Go to FAQ](AIO-FAQ.md "FAQ")
-
 ## AIO Changelog:
 
 ### V{{ site.version }} - 2016-07-22

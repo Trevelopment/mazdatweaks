@@ -17,7 +17,7 @@ permalink: /serial/
 -   USB Flash Drive
 -   10mm socket wrench with extender/ratchet
 -   [Putty](https://www.putty.org/) or [SecureCRT](https://www.vandyke.com/products/securecrt/)
--   [Mazda AIO Tweaks](https://madatweaks.com)
+-   [Mazda AIO Tweaks](http://dl.mazdatweaks.win)
 
 ## Preparation:
 
@@ -45,6 +45,10 @@ or
 ### Accessing the CMU: ([Watch this video](https://youtu.be/zFKr4L414dM) to see how its done)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zFKr4L414dM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+#### [Another Great Video](https://youtu.be/DhbI25T3w3Q): 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DhbI25T3w3Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 1.  Open glove box
 2.  Pull the trim. You will need to use more force than you expect. The front fan area is attached to the trim and will come off as well.

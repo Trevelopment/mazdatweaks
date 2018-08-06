@@ -1,8 +1,5 @@
 # Mazda Videoplayer
 ## Videoplayer app for Mazda cars with Mazda Connect v55+
-#### [Changelog](CHANGELOG.md)
-
-[ ![Video Player v2.8](//api.bintray.com/packages/trevelopment/MZD-Apps/VideoPlayer/images/download.svg) ](http://VP28.mazdatweaks.win "Video Player v2.8")
 
 **It works better if you start the car without usb connected. Insert only the usb with movies. Stop the music player and then start the videoplayer.**
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /casdk/
+title: CASDK
 category: casdk
 ---
 
@@ -19,15 +20,18 @@ the CASDK framework.
 <div class="blog-text w3-container">
 <p>The Custom Application SDK for Mazda Infotainment System is a micro framework that allows you to write and deploy custom applications which integrate natively into the existing JCI framework without hassle. This version of CASDK is integrated with AIO
 to create a unique framework with endless app possibilities.</p>
-
-
+<button onclick="$('#casdkVideo').slideToggle()" class="w3-button w3-block w3-center">
+Watch this CASDK Video!</button>
+<div id="casdkVideo" style="display:none">
+<iframe width="1040" height="585" style="width:100%" src="https://www.youtube.com/embed/9C-wHNuiPqE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 <div class="w3-container">
 <h5>CASDK comes with:</h5>
 - **CASDK Proxy** - Proxy registers both CASDK and AIO apps and replaces "additionalApps.js".
-- **Custom Application Runtime** - A microframework that handles the custom applications during runtime. 
-- **Data Readers** - Poll vehicle data an certain intervals (1s, 60s, & 300s) 
-- **JS logging** - JavaScript (and CSS) console log is written to /tmp/root/casdk-error.log 
-- **LocalStorage** - Moves the save location of localStorage to /tmp/mnt/data_persist/storage/ 
+- **Custom Application Runtime** - A microframework that handles the custom applications during runtime.
+- **Data Readers** - Poll vehicle data an certain intervals (1s, 60s, & 300s)
+- **JS logging** - JavaScript (and CSS) console log is written to /tmp/root/casdk-error.log
+- **LocalStorage** - Moves the save location of localStorage to /tmp/mnt/data_persist/storage/
 - **NodeJS** - Powerful Server-side JavaScript.
 - **ADB** - Android Debug Bridge for Android devices.
 - **Custom Applications** - Apps that run on the CASDK framework
@@ -42,8 +46,9 @@ older app installers will not work while CASDK is installed.
 ### AIO Codes for CASDK Apps:
 
 <p>Eventually all the codes will be here so that you can pick CASDK apps are available in AIO.</p>
-  
+
 {% for post in site.categories[page.category]  %}
+
 <article><h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <div class="post-content">{{ post.content }}</div></article>
 {% endfor %}
