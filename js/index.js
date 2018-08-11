@@ -16,4 +16,16 @@ function copyCode(x) {
   var copyText = document.execCommand("Copy");
   if(copyText) $(x).parents('li').children('.copy-msg').append("<span class='copied-msg'>Copied to Clipboard</span>");
   $('.copied-msg').fadeOut(4000);
+  snackbar($(x).val());
+}
+
+function snackbar(message) {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+	x.innerHTML = message + ' Copied to Clipboard';
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }

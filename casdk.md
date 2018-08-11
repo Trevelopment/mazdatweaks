@@ -52,3 +52,9 @@ older app installers will not work while CASDK is installed.
 <article><h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <div class="post-content">{{ post.content }}</div></article>
 {% endfor %}
+
+<style>
+.one-liners input[type=text] {
+    width: 100px;
+}
+</style>
