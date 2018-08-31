@@ -1,0 +1,8 @@
+article {
+    border-bottom: 3px dashed;
+}
+.casdk-app-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr; /* Dividing website into columns of 2 equal fractions */
+ }

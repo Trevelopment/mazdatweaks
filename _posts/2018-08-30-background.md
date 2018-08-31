@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Background"
-date:   2018-08-29 01:00:00 -0800
+date:   2018-07-08 01:00:00 -0800
 categories: casdk
 ghlink:
 ---
@@ -17,5 +17,11 @@ Change your background on the fly.  The first background will reset to your defa
 
 **Controls:**
 
-- Up /Down / Left / Right / Rotate: Select Background
+- Up / Down / Left / Right / Rotate: Select Background
 - Select: Choose Background
+
+##### Adding your own backgrounds:
+1. Choose a image that is 800x480
+2. Go into the folder `casdk/apps/app.background/background` and put the image in that folder with the others
+3. In that same folder open the file "list.js" and add the name of the file to the list in quotes and comma after like the other list entries.  You can add it anywhere in the list.
+4. Last step is to make a smaller copy of the image size 225x135 with the same filename and add it to `casdk/apps/app.background/icons`

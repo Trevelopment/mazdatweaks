@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Simple Dashboard"
-date:   2018-06-20 01:00:00 -0800
+date:   2018-06-19 01:00:00 -0800
 categories: casdk
 ghlink: https://gitlab.com/casdk/casdk-simpledashboard
 ---

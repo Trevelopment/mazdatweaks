@@ -46,13 +46,13 @@ older app installers will not work while CASDK is installed.
 ### AIO Codes for CASDK Apps:
 
 <p>Eventually all the codes will be here so that you can pick CASDK apps are available in AIO.</p>
-
+<div class="casdk-app-grid">
 {% for post in site.categories[page.category]  %}
 
 <article><h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <div class="post-content">{{ post.content }}</div></article>
 {% endfor %}
-
+</div>
 <style>
 .one-liners input[type=text] {
     width: 100px;
