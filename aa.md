@@ -8,13 +8,13 @@ permalink: /androidauto/
 
 ## Instructions for Android Auto Wireless Support (v1.09+):
 
-### Initial wireless connection 
-1. <b>PHONE</b>:  Enable Developer Settings on Android Auto 
+### Initial wireless connection
+1. <b>PHONE</b>:  Enable Developer Settings on Android Auto
 2. <b>CAR</b> : Start car
 3. <b>PHONE</b>: Create a personal hotspot
 4. <b>CAR</b> : Connect Wifi to personal hotspot
 
-### Run headunit-wireless 
+### Run headunit-wireless
 5. <b>PHONE</b>: Open Android Auto app and go to "about". Open the menu and tap "Start Head unit Server"
 6. <b>CAR</b>: Android Auto Headunit will start automatically
 
@@ -61,6 +61,8 @@ _Beta releases will have 1 or more features from the next version but official r
 [Mirror for v1.05b, v1.06 & v1.06b](//trevelopment.win/aa-mirror105b)<br>
 [Another Mirror for v1.06](//trevelopment.win/aa-megamirror106)<br>
 [Mirror for v1.07](//trevelopment.win/aamirror107)<br>
+[v1.09](//trevelopment.win/aa109)<br>
+[v1.10+](//trevelopment.win/aa110) (Without HUD because feature was unstable)<br>
 
 For more information visit the [Headunit Repository](//trevelopment.win/aarepo)
 or visit [this mazda3revolution thread](//trevelopment.win/aafix).
