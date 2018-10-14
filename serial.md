@@ -83,17 +83,16 @@ or
 7.  Reboot Mazda CMU by holding the Nav + Mute button for 10+ seconds.
 8.  Input <span class="copy-msg"></span><span class="one-liner"><code><input type="text" id="usercopy" value="user" onclick="copyCode('#usercopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#usercopy').click()" style="font-size:8px">Copy</span>
 9.  Input <span class="copy-msg"></span><span class="one-liner"><code><input type="text" id="jcicopy" value="jci" onclick="copyCode('#jcicopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#jcicopy').click()" style="font-size:8px">Copy</span>
-10. (Optional) Test if serial commands work by running `reboot`.
-11. Run <span class="copy-msg"></span>
+10. Run <span class="copy-msg"></span>
 	-   <pre><code><input type="text" id="code2copy" value="cp -r /tmp/mnt/sd*/XX/* /tmp/mnt/data_persist/dev/bin/; chmod +x /tmp/mnt/data_persist/dev/bin/autorun" readonly>
     </code> <button class="w3-btn" onclick="copyCode('#code2copy')">Copy</button> </pre>
-12. (Optional) To test if the files have been moved to the folder, run <span class="copy-msg"></span>
+11. (Optional) To test if the files have been moved to the folder, run <span class="copy-msg"></span>
 	-   <pre><code><input type="text" id="code2copy2" value="ls -l /tmp/mnt/data_persist/dev/bin" readonly> </code> <button class="w3-btn" onclick="copyCode('#code2copy2')">Copy</button> </pre>
 	-   The files/folders should be colored in green/blue since they are folders/executable. You may have to run this a few times to see the Serial Console output.
 	-   ![Output](/images/ls-l_output.png "This is what the output should look like")
 
-13. Remove flash drive, turn off car, insert flash drive that has AIO tweaks installed, turn car on back in ACC mode
-14. After a few minutes, you should see a message that indicates the mods are being installed. This process may take approximately 2 - 20 minutes.
+12. Remove flash drive, turn off car, insert flash drive that has AIO tweaks installed, turn car on back in ACC mode
+13. After a few minutes, you should see a message that indicates the mods are being installed. This process may take approximately 2 - 20 minutes.
 
 ### Finishing Up
 
