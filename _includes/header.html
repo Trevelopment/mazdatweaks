@@ -4,7 +4,7 @@
 	class="w3-closenav w3-xxlarge">&times;</a>
 	<a class=" w3-hover-green {% if page.url == '/' %} w3-blue {% endif %}" href="{{ '/' | prepend: site.baseurl }}">Home</a>
 	{% for my_page in site.pages %}
-	{% if my_page.title %}
+	{% if my_page.title != null %}
 	<a class="page-link w3-hover-green {% if page.title == my_page.title %} w3-blue {% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
 	{% endif %}
 	{% endfor %}
@@ -40,11 +40,17 @@
 			<div class="wrapper navbar-wrapper w3-hide-small w3-text-shadow">
 				<ul class="navbar w3-dark-grey">
 					<li><a href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
+          <!--
 					{% for my_page in site.pages | sort: 'order', 'last' %}
 					{% if my_page.title %}
 					<li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> </li>
 					{% endif %}
 					{% endfor %}
+          -->
+          <li><a href="{{ '/faq' | prepend: site.baseurl }}">FAQ</a></li>
+          <li><a href="{{ '/serial' | prepend: site.baseurl }}">Serial</a></li>
+          <li><a href="{{ '/androidauto' | prepend: site.baseurl }}">AA</a></li>
+          <li><a href="{{ '/casdk' | prepend: site.baseurl }}">CASDK</a></li>
 					<li class="w3-dropdown-hover">
     <a href="#" class="moar">Moar</a>
     <div class="w3-dropdown-content w3-bar-block">
