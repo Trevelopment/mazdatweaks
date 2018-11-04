@@ -4,7 +4,7 @@
 	class="w3-closenav w3-xxlarge">&times;</a>
 	<a class=" w3-hover-green {% if page.url == '/' %} w3-blue {% endif %}" href="{{ '/' | prepend: site.baseurl }}">Home</a>
 	{% for my_page in site.pages %}
-	{% if my_page.title != null %}
+	{% if my_page.side_menu %}
 	<a class="page-link w3-hover-green {% if page.title == my_page.title %} w3-blue {% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
 	{% endif %}
 	{% endfor %}
@@ -14,7 +14,6 @@
 	<a href="/screenshots" class="w3-hover-green">Screenshots</a>
 	<a href="/videoplayer" class="w3-hover-green">VideoPlayer Info</a>
 	<a href="/castscreen" class="w3-hover-green">CastScreen-Receiver</a>
-	<a href="/serial" class="w3-hover-green">Serial Connection Instructions</a>
 	<!--a class=" w3-hover-green" href="./faq/"></a-->
 </nav>
 {% if page.title == "Changelog" %}
@@ -37,20 +36,14 @@
 	{% endif %}
 	<div id="main" style="margin-left: 0%;">
 		<header class="site-header">
-			<div class="wrapper navbar-wrapper w3-hide-small w3-text-shadow">
+			<div class="wrapper navbar-wrapper w3-hide-small w3-hide-medium w3-text-shadow">
 				<ul class="navbar w3-dark-grey">
 					<li><a href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
-          <!--
 					{% for my_page in site.pages | sort: 'order', 'last' %}
-					{% if my_page.title %}
+					{% if my_page.top_menu %}
 					<li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> </li>
 					{% endif %}
 					{% endfor %}
-          -->
-          <li><a href="{{ '/faq' | prepend: site.baseurl }}">FAQ</a></li>
-          <li><a href="{{ '/serial' | prepend: site.baseurl }}">Serial</a></li>
-          <li><a href="{{ '/androidauto' | prepend: site.baseurl }}">AA</a></li>
-          <li><a href="{{ '/casdk' | prepend: site.baseurl }}">CASDK</a></li>
 					<li class="w3-dropdown-hover">
     <a href="#" class="moar">Moar</a>
     <div class="w3-dropdown-content w3-bar-block">
@@ -74,7 +67,7 @@
 				{% endif %}
 				<section class="page-header">
 					<span class="w3-opennav w3-xxlarge w3-display-topleft w3-padding" onclick="w3_open()" id="openNav">&#9776;</span>
-					{% if page.title == "Changelog" %}<span id="rightnavtoggle" class="w3-opennav w3-xxlarge w3-display-topright w3-padding" onclick="openRightMenu()"><span class="w3-large w3-hide-small">VERSION: </span>&#9776;</span>{% endif %}
+					{% if page.title == "Changelog" %}<span id="rightnavtoggle" class="w3-opennav w3-xxlarge w3-display-topright w3-padding" onclick="openRightMenu()"><span class="w3-large w3-hide">VERSION: </span>&#9776;</span>{% endif %}
 					<h1 class="project-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a><br><small>{{ page.title }}</small></h1>
 					<h2 class="project-tagline">{{ site.project_name }}<br>{{ site.description }}</h2>
 					<a href='http://dl.mazdatweaks.win' class="btn">AIO {{site.version}}<img src='/images/download.svg?version=MZD-AIO-TI'></a>

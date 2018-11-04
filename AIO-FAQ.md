@@ -1,6 +1,8 @@
 ---
 layout: page
 title: FAQ
+side_menu: true
+top_menu: true
 permalink: /faq/
 order: 3
 ---

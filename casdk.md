@@ -2,6 +2,8 @@
 layout: default
 permalink: /casdk/
 title: CASDK
+side_menu: true
+top_menu: true
 category: casdk
 ---
 

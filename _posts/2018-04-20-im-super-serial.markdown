@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Serial"
+side_menu: true
+top_menu: true
 date:   2018-04-06 01:00:00 -0800
 categories: serial
 ---

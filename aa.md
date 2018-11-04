@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Android Auto
+side_menu: true
+top_menu: true
 permalink: /androidauto/
 ---
 

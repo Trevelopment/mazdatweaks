@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Serial Connection
+side_menu: true
+top_menu: true
 permalink: /serial/
 ---
 
@@ -46,7 +48,7 @@ or
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zFKr4L414dM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-#### [Another Great Video](https://youtu.be/DhbI25T3w3Q): 
+#### [Another Great Video](https://youtu.be/DhbI25T3w3Q):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DhbI25T3w3Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -59,7 +61,7 @@ or
 
 ### Wiring the CMU:
 
-**Do not modify any of the below commands** If the commands do not work, then you have done something wrong (i.e. you're not logged in, or RX/TX wires are not properly wired) 
+**Do not modify any of the below commands** If the commands do not work, then you have done something wrong (i.e. you're not logged in, or RX/TX wires are not properly wired)
 
 1.  You will need to have 3 wires connected to the CMU: Transmit (TX), Receive (RX), and Ground (GND)
 2.  Here is a picture of the back of the CMU. We are going to be adding our cables to the ‘power&more’ connector. Here is a more detailed picture of where the RX and TX cables go.
@@ -69,8 +71,8 @@ or
 
 ### Serial Console App:
 
--   Make sure you know what the paste command is for your Serial Console application. In Putty, you right click inside the terminal window and it will paste whatever command you had copied. For SecureCRT, you push Ctrl+Shift+V to paste. 
-   
+-   Make sure you know what the paste command is for your Serial Console application. In Putty, you right click inside the terminal window and it will paste whatever command you had copied. For SecureCRT, you push Ctrl+Shift+V to paste.
+
 1.  Windows will auto-assign a COM Port to the CP2102 module once its plugged in. Go to Device Manager > Ports (COM & LPT) to see what the COM Port # is
 	-   For SecureCRT, under Options > Connection > Serial, set Port = COM#, Baud = 115200, Data Bits = 8, Parity = None, Stop Bits = 1
 	-   For Putty, you just need to select ‘Serial’ and then enter the COM Port # and set Baud to 115200
@@ -78,7 +80,7 @@ or
 3.  Plug in flash drive
 4.  Turn the car to ACC mode by just pressing the On button without putting your foot on brake to fully turn car on
 5.  Now you are really going to be seeing text fly by, **remember that the commands are working even though you cannot see what you are typing because of the text flying by.**
-6.  Press Enter in terminal and CMU will respond with ‘login’. For the next several steps make sure you do not make any spelling mistakes. It is probably **best to copy and paste the commands** (to paste you just need to right click in the terminal window). 
+6.  Press Enter in terminal and CMU will respond with ‘login’. For the next several steps make sure you do not make any spelling mistakes. It is probably **best to copy and paste the commands** (to paste you just need to right click in the terminal window).
     - **If text is flying by so fast it seems like you can't type you are doing everything correctly, copy and paste each command and press enter!  It will seem like your commands are not being sent to the Mazda but don’t worry they are** (_provided your wiring is right. If you got a module with LEDs you can check **TX is Transmit/RX is Receive**_)
 7.  Reboot Mazda CMU by holding the Nav + Mute button for 10+ seconds.
 8.  Input <span class="copy-msg"></span><span class="one-liner"><code><input type="text" id="usercopy" value="user" onclick="copyCode('#usercopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#usercopy').click()" style="font-size:8px">Copy</span>
