@@ -85,6 +85,8 @@ or
 7.  Reboot Mazda CMU by holding the Nav + Mute button for 10+ seconds.
 8.  Input <span class="copy-msg"></span><span class="one-liner"><code><input type="text" id="usercopy" value="user" onclick="copyCode('#usercopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#usercopy').click()" style="font-size:8px">Copy</span>
 9.  Input <span class="copy-msg"></span><span class="one-liner"><code><input type="text" id="jcicopy" value="jci" onclick="copyCode('#jcicopy')" title="Click to Copy" readonly></code></span> and push Enter <span class="w3-btn" onclick="$('#jcicopy').click()" style="font-size:8px">Copy</span>
+> *NOTE:* After installing the autorun scripts you will be able to login as the root user with username: **cmu** pass: **jci**
+
 10. Run <span class="copy-msg"></span>
 	-   <pre><code><input type="text" id="code2copy" value="cp -r /tmp/mnt/sd*/XX/* /tmp/mnt/data_persist/dev/bin/; chmod +x /tmp/mnt/data_persist/dev/bin/autorun" readonly>
     </code> <button class="w3-btn" onclick="copyCode('#code2copy')">Copy</button> </pre>

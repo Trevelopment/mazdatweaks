@@ -7,7 +7,7 @@ permalink: /faq/
 order: 3
 ---
 
-## AIO FAQ  -  2018-08-01
+## AIO FAQ  -  2018-12-01
 
 **How can I get these awesome tweaks on my Infotainment System?**
 
@@ -31,7 +31,7 @@ order: 3
 
 >  **AIO IS COMPATIBLE WITH ALL FW V55, V56, V58, AND V59**
 >
-> **AIO is also compatible with version 59.00.502+ ONLY IF YOU HAVE DONE THE NECESSARY STEPS TO ENABLE TWEAKS INSTALLATION ([Read This Thread For More Info](https://trevelopment.win/im-super-serial))**
+> **AIO is also compatible with version 59.00.502 - v70.00.100 ONLY IF YOU HAVE DONE THE NECESSARY STEPS TO ENABLE TWEAKS INSTALLATION ([Read This Thread For More Info](https://trevelopment.win/im-super-serial))**
 >
 >  **This can be done by installing autorun & recovery scripts before updating**
 >
@@ -39,14 +39,6 @@ order: 3
 >
 >  <a href="#" class="supported-fw-btn">All Compatible Firmware Versions Are Listed Here.</a>
 >  AIO will read out your FW version at beginning of installation, if it's not compatible the installation will abort.
-
-* * *
-
-**Is there anything to note, if I use a MAC?**
-
->  If you are using a Mac or Mac formatted thumb drive make sure there are no hidden files on the drive.  
->    The drive should be formatted Fat 32 on a PC if possible.  
->    [Look here](//www.reddit.com/r/mazda3/comments/3d5lvr/mazda_infotainment_update/ctls5ef)
 
 * * *
 
@@ -81,9 +73,30 @@ order: 3
 
 * * *
 
+**Is there anything to note, if I use a MAC or Linux?**
+
+>  AIO is fully compatible and functional on Mac and Linux just make sure the USB drive is FAT 32 formatted.
+>  If you are using a Mac or Mac formatted drive that is not working try deleting all hidden files on the drive and have AIO copy tweak files directly to the USB drive to avoid creating additional hidden files.
+
+* * *
+
+**Do all tweaks need to be uninstalled when performing a FW update or a factory reset?**
+
+>  No.  You can a safely update with tweaks installed because all the tweaked files will be replaced by new, updated files.  The exception is the Autorun and Recovery script that **must** be installed before updating to work correctly.
+> The system can also be factory reset safely with any of the tweaks installed with AIO v2.8.3+ (and Remove Message Reply tweak only works after a factory reset).  There once was an issue with factory reset if Android Auto was installed but that issue was fixed over a year ago.
+
+* * *
+
+**What is the root username & password to connect via SSH?**
+
+>  After running SSH_Bringback or the Autorun and Recovery scripts the credentials to login as root via SSH are user: **cmu** pass: **jci**
+>  For FW versions before v56.00.513 the username is "root" but you can change that by checking the Force Update SSH option.  This is useful because updating to a FW version after v56 will change your password to something unknown ONLY IF the root username is "root" so you can avoid that altogether by changing the root username to "cmu" before updating.
+
+* * *
+
 **What is "autorun & recovery?"**
 
-> Autorun & recovery are a set of scripts that will automatically regain SSH access and allow for tweaks to be installed when updating to firmware v59.00.502+ or [after gaining serial access](https://trevelopment.win/im-super-serial).  The recovery script lies dormant until it detects it is needed then runs automatically in the background without you even noticing that it is fixing the issue.  
+> Autorun & recovery are a set of scripts that will automatically regain SSH access and allow for tweaks to be installed when updating to firmware v59.00.502+ or [when gaining serial access](https://trevelopment.win/im-super-serial).  The recovery script lies dormant until it detects it is needed then runs automatically in the background without you even noticing that it is fixing the issue.  
 
 * * *
 
@@ -127,7 +140,7 @@ order: 3
 **If I want to go back to original state but I forgot the tweaks I've installed, what can I do?**
 
 >  It doesn't matter if you choose tweaks for uninstalling that you haven't installed.  AIO is designed to discover and revert only the changes that have been made by AIO with a few necessary exceptions.  Uninstalling all tweaks (and choosing default color scheme and background) will revert your system back to the default state.  Any changes made outside of AIO are your own responsibility.
->  There is also a "Full Restore" tweak that can be accessed through the dropdown nest to the Start Compilation button or the side menu.  You can use the to safely revert your system to "stock."
+>  There is also a "Full Restore" tweak that can be accessed through the dropdown next to the Start Compilation button or the side menu.  You can use the to safely revert your system to "stock."
 > A third option is in the AIO Tweaks App.  Choose the "System Restore" option and your system will be restored EXCEPT for the default Red color theme file, that you mush revert with AIO by selecting the "Custom Infotainment Colors" Tweak and Red (Default) Option.
 
 * * *
@@ -174,8 +187,8 @@ order: 3
 
 >  This happens with some FW versions (56.00.51x). Try this to get GPS data for these FW versions:
 >
-> -   After opening the doors (or trunk) at least **wait 35 seconds**, then start the engines
-> -   Before starting the speedometer app, shortly start the NAVI app before (works too, if NAVI app was open if engine was stopped)
+> -   After opening the doors (or trunk) wait at least **35 seconds**, then start the engines
+> -   Before starting the speedometer app, start the NAVI app (also works if NAVI app was open when the engine was stopped)
 > -   Unplug and re-plug the NAV SD card (**should be avoided**)
 
 * * *
@@ -184,7 +197,7 @@ order: 3
 
 >  **If you use a navigation SD card and/or use the Video Player app or Android Auto often,** you may want to be use the swapfile if you are hiving memory issues.  The Mazda Navigation System occupies a HUGE portion of your active memory.  Those 2 apps require a pretty substantial chunk of memory for themselves to run smoothly, swap memory is the solution designed to solve this very issue.  
 > When the system runs out of active memory and requires more in order to complete the current process, memory will swap (for empty memory space) an unused (or cached) part of itself with the swap memory to use as active memory until it is no longer needed or the swapped process is called, then it swaps back.  
-> **TIP:** Swap memory is mounted during the CMU's boot process and is also mounted when using the VideoPlayer app.  Some have found better performance by connecting the USB drive after boot is complete so the swapfile can be mounted by the videoplayer app.  
+> **TIP:** Swap memory is mounted during the CMU's boot process and is also mounted when using the Video Player app.  Some have found better performance by connecting the USB drive after boot is complete so the swapfile can be mounted by the Video Player app.  
 > **NOTE:** **Memory swap management is not perfect** and performance issues can emerge in certain situations such as switching rapidly between many processes.
 
 * * *
@@ -194,6 +207,7 @@ order: 3
 >  Video: MP4, AVI, FLV, WMV; Audio: Stereo MPA  
 >  A good format to use H264 video codec and MPEG-4 AAC audio codec in video files  
 >  360p quality works best (and still looks great)
+>  The app will also play music files in MP3 and FLAC formats.
 
 * * *
 
@@ -203,12 +217,12 @@ order: 3
 >  Try the following:
 >
 > -   **REMOVE NAV_SD CARD**  
-> -   Put all videos in "movies" folder at the USB drive root.
+> -   Put all videos in "movies" & audio in "music" folders at the USB drive root.
 > -   Unplug all other USB drives, especially one, with many MP3s on it.
 > -   Close the player and start again
 > -   Turn the car on without the USB drive plugged in
 > -   Copy only one mp3 on your video USB drive
-> -   Copy only a few videos on your stick (you don't have to delete, rename to _.\_mp4 is OK too, so that they will not found anymore)_
+> -   Copy only a few videos on your stick (you don't have to delete, rename to _.\_mp4 is OK too, so that they are not found anymore)_
 > -   Try the SwapFile Tweak
 > -   Reboot your system and try to play a video right after that
 
@@ -225,14 +239,14 @@ order: 3
 **In entertainment window, pause-on-mute works perfectly. But if you leave from the entertainment window, "mute" mutes sound but does not pause the song.**
 
 >  This behavior is correct and as expected.  The pause command will not reach the player if you are in any other app/menu.
+>  Note: Pause-on-mute is not compatible with FW v70
 
 * * *
 
 **I applied the Remove Message Reply tweak but I still get the message on my texts?**
 
->  In order to apply this tweak you have to do a factory reset of **ALL** settings.  Unfortunately this is the only way to apply that tweak but here is a tip when applying.  
-> <span id="order-audio-sources"></span>
-> **TIP:** Edit the values of the PresetMessages nodes under your language in file `config/message_replies/jci/settings/configurations/blm_msg-system.xml` to start with your own custom preset messages after the factory reset.
+>  In order to apply this tweak you have to do a factory reset of **ALL** settings.  Unfortunately this is the only way to apply this tweak.
+> **TIP:** Edit the preset text messages in your language directly in AIO under the Remove Message Reply options!
 
 * * *
 
@@ -283,14 +297,15 @@ order: 3
 > -   Try disconnecting for at least 5 seconds and then reconnecting your phone.
 > -   Try connecting the phone in different modes such as MTP or PTP.
 > -   Using CastScreen together with AA installed can be tricky, a trick is to put your phone in PTP mode to disconnect from AA. Then do not disconnect your phone until you are finished screen casting or AA will launch and steal focus.
-> -   Try connecting to SSH through USB through localhost:2222, if you cannot connect then something is wrong with the CastScreen installation. _If you get an error like: connection closed by foregn host or something like that try toggling wifi._
+> -   Try connecting to SSH through USB through localhost:2222, if you cannot connect then something is wrong with the CastScreen installation. _If you get an error like: connection closed by foreign host or something like that try toggling Wi-Fi._
 > -   CastScreen-Receiver uses the same module as the video player to display and therefor can suffer similar performance issues if the nav_sd card is being used.  If you are experiencing issues, removing the nav card will improve screen casting performance.
 
 * * *
 
 **Whats Up With Android Auto Headunit App?**
 
->  **Android Auto Headunit App for MZD is an ongoing development** by many developers all around the world.  The project was forked from a fully reverse engineered AA headunit app by the late great Mike Reid and ported to the MZD infotainment system where it underwent development by some extremely talented developers.  The Mazda community waited for an official version to come out but was met with empty promises, driving a few determined hackers to create a fully working version first. As of now [Android Auto Headunit App ver.1.09](http://aa.mazdatweaks.win) is free of major bugs and works as it should well before an official version was released... if that ever even happens.
+>  **Android Auto Headunit App for MZD is an ongoing development** by many developers all around the world.  The project was forked from a fully reverse engineered AA headunit app by the late great Mike Reid and ported to the MZD infotainment system where it underwent development by some extremely talented developers.  The Mazda community waited for an official version to come out but was met with empty promises, driving a few determined hackers to create a fully working version first.
+>  The official Android Auto has been released but requires a FW & hardware USB hub upgrade.  Note that the community version of AA Headunit App may not function with v70.
 
 * * *
 
@@ -303,12 +318,12 @@ order: 3
 
 **What about Apple Car Play?**
 
-> As far as I know there are no community projects involving Car Play, the official version may be out soon but will require both a software and hardware upgrade.
+> The official version of Car Play and Android Auto have been released with the v70.00.XXX FW. A hardware upgrade to the USB hub is required to use them.
 
 * * *
 
 **Can you write this or that tweak for us?**
 
->  By now I have studied the inner workings of the Infotainment System so well I could probably go work for Johnson Controls or Visteon.  There are still things that are very tricky, dangerous and/or impossible to pull off but if you have an idea [Shoot me an email](mailto:trez@mazdatweaks.com?subject=Tweak%20Request) and I will give it a shot (Except Car Play)
+>  By now I have studied the inner workings of the Infotainment System so well I could probably go work for Johnson Controls or Visteon.  There are still things that are very tricky, dangerous and/or impossible to pull off but if you have an idea [Shoot me an email](mailto:trez@mazdatweaks.com?subject=Tweak%20Request) and I will give it a shot.
 
 * * *
