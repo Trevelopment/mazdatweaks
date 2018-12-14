@@ -42,9 +42,17 @@ order: 3
 
 * * *
 
+**Is there anything to note, if I use a MAC or Linux?**
+
+>  AIO is fully compatible and functional on Mac and Linux just make sure the USB drive is FAT 32 formatted.
+>  If you are using a Mac or Mac formatted drive that is not working try deleting all hidden files on the drive or reformat and connect the drive before compiling tweaks so that AIO can copy the tweak files directly to the USB drive and avoid creating additional hidden files.
+
+* * *
+
 **How long does it take till the installation starts?**
 
 >  This can take **from 30 seconds to 20 minutes**.  Certain factors can delay the start so be patient.
+<a name="update"></a>
 
 * * *
 
@@ -70,13 +78,6 @@ order: 3
 **Will all previously installed tweaks be automatically uninstalled, if I do not choose them with a new installer?**
 
 >  No. Only tweaks you have chosen to uninstall will be removed.
-
-* * *
-
-**Is there anything to note, if I use a MAC or Linux?**
-
->  AIO is fully compatible and functional on Mac and Linux just make sure the USB drive is FAT 32 formatted.
->  If you are using a Mac or Mac formatted drive that is not working try deleting all hidden files on the drive and have AIO copy tweak files directly to the USB drive to avoid creating additional hidden files.
 
 * * *
 

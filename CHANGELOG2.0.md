@@ -3,7 +3,7 @@ layout: page
 title: Changelog
 side_menu: true
 top_menu: true
-perma: /changelog2/
+permalink: /changelog2/
 order: 4
 ---
 
