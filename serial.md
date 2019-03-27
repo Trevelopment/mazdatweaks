@@ -64,14 +64,14 @@ or
 **Do not modify any of the below commands** If the commands do not work, then you have done something wrong (i.e. you're not logged in, or RX/TX wires are not properly wired)
 
 1.  You will need to have 3 wires connected to the CMU: Transmit (TX), Receive (RX), and Ground (GND)
-2.  Here is a picture of the back of the CMU. We are going to be adding our cables to the ‘power&more’ connector. Here is a more detailed picture of where the RX and TX cables go.
+2.  Here is a picture of the back of the CMU. We are going to be adding our cables to the ‘power&more’ connector. Here is a more detailed picture of where the RX and TX cables go. Note: The smaller 2x4logic.com diagram looks like it's the opposite of the other picture but that's because the CMU is using 2S to transmit (so the serial adapter will be receiving). For the sake of simplicity, connect the RX port of your Serial Adapter to 2S (top) and TX port to 2T (bottom).
     -   ![Back of the CMU](/images/cmu-back.jpg) ![Back of the CMU](/images/cmu-rx-tx.jpg)
 3.  Be sure that the cable is going into the port. It must go in about an inch. The GND cable can go anywhere so long as it is touching the CMU. I recommend slightly unscrewing one of the Philips head screws and wedging the cable in there.
 4.  Connect the other end of the wires to the CP2102 module in its corresponding port.
 
 ### Serial Console App:
 
--   Make sure you know what the paste command is for your Serial Console application. In Putty, you right click inside the terminal window and it will paste whatever command you had copied. For SecureCRT, you push Ctrl+Shift+V to paste.
+-   Make sure you know what the paste command is for your Serial Console application. In Putty, you right click inside the terminal window and it will paste whatever command you had copied. For SecureCRT, you push Ctrl+Shift+V to paste. Remember that these shortcuts will only paste, you will have to push enter after to actually send the command.
 
 1.  Windows will auto-assign a COM Port to the CP2102 module once its plugged in. Go to Device Manager > Ports (COM & LPT) to see what the COM Port # is
 	-   For SecureCRT, under Options > Connection > Serial, set Port = COM#, Baud = 115200, Data Bits = 8, Parity = None, Stop Bits = 1
