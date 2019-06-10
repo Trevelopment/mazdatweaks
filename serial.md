@@ -9,7 +9,7 @@ permalink: /serial/
 # **CMU Serial Access**
 
 **In FW v59.00.502 and higher the CMU is locked down and users cannot access to their own systems and can no longer install tweaks.**  Currently the only way to circumvent this is to make a serial connection and follow these instructions very carefully. This process will allow you to run tweaks from USB.
-
+**[EXTRA INSTRUCTIONS FOR FW v70.00.335](/id7) and higher.  Serial connection will need to be made before updating or FW reinstall to regain root access.**
 ### **_A huge Thank You to [Albuyeh](http://www.albuyeh.com/) for writing these detailed instructions._**
 
 ## Parts/Equipment Needed:
@@ -88,10 +88,10 @@ or
 > *NOTE:* After installing the autorun scripts you will be able to login as the root user with username: **cmu** pass: **jci**
 
 10. Run <span class="copy-msg"></span>
-	-   <pre><code><input type="text" id="code2copy" value="cp -r /tmp/mnt/sd*/XX/* /tmp/mnt/data_persist/dev/bin/; chmod +x /tmp/mnt/data_persist/dev/bin/autorun" readonly>
+	-   <pre><code><input type="text" id="code2copy" value="cp -r /mnt/sd*/XX/* /mnt/data_persist/dev/bin/; chmod +x /mnt/data_persist/dev/bin/autorun; /mnt/data_persist/dev/bin/autorun" readonly>
     </code> <button class="w3-btn" onclick="copyCode('#code2copy')">Copy</button> </pre>
 11. (Optional) To test if the files have been moved to the folder, run <span class="copy-msg"></span>
-	-   <pre><code><input type="text" id="code2copy2" value="ls -l /tmp/mnt/data_persist/dev/bin" readonly> </code> <button class="w3-btn" onclick="copyCode('#code2copy2')">Copy</button> </pre>
+	-   <pre><code><input type="text" id="code2copy2" value="ls -l /mnt/data_persist/dev/bin" readonly> </code> <button class="w3-btn" onclick="copyCode('#code2copy2')">Copy</button> </pre>
 	-   The files/folders should be colored in green/blue since they are folders/executable. You may have to run this a few times to see the Serial Console output.
 	-   ![Output](/images/ls-l_output.png "This is what the output should look like")
 
