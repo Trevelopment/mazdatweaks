@@ -5,8 +5,8 @@ order: 2
 ---
 
 ## AIO Changelog:
-
-### V{{ site.version }} - 2016-07-22
+[Changelog for Version 2.0+](/changelog2)
+### V1.50 - 2016-07-22
 _**CHANGES/NEWS:**_
 
 
@@ -18,7 +18,7 @@ _**CHANGES/NEWS:**_
 
   * i hope, this will work for version 1.51 ...
 
-- After select 'individual background image' you now can choose from one of 80 images in choose\more_background-images folder
+- After select 'individual background image' you now can choose from one of 80 images in choose \more_background-images folder
 
   * simply double-click on the file-name of the image and it will be used, if you just close the window, the original background will be used
 
@@ -165,7 +165,7 @@ _**CHANGES/NEWS:**_
 
   * After opening the doors (or trunk) at least wait 35 seconds, then start the engines (thanks @drletai for this hint)
 
-  * Unplug and replug the NAV SD card 
+  * Unplug and replug the NAV SD card
 
   * Before starting the speedometer app, shortly start the NAVI app before (works too, if NAVI app was open if engine was stopped)
 
@@ -454,7 +454,7 @@ _**CHANGES/NEWS:**_
 
 - By pressing '8', the most tweaks will be selected for installation mode, for deinstallation mode all, except backup and swapfile.
 
-  * Remember: by pressing '1' or '2' to switch to installation / deinstallation mode, all the markers are cleared and you can start over. 
+  * Remember: by pressing '1' or '2' to switch to installation / deinstallation mode, all the markers are cleared and you can start over.
 
 - New tweak for disable/enable the boot animation to red button menu
 
@@ -509,11 +509,11 @@ _**CHANGES:**_
   * this though works only if both were installed once each with the new AIO V1.37 and higher (a file marker for detection of installation is set)!
 
 - New installation routine for custom- infotainment- colors and speedometer. Both can now be installed individually, but the color is adjusted anyway:
-  
+
   * If speedometer was already installed, then color will adjusted anyway, if custom- infotainment- colors will be installed without speedometer again.
-  
+
   * If custom- infotainment- colors was already installed (with >= 1.37), then color of speedometer will adjusted anyway, if speedometer will be installed without custom- infotainment- colors.
-  
+
   * this though works only if the installation of custom- infotainment- colors is done with AIO V1.37 and higher (a file marker for detection of installation will set)!
 
 - New installation routine for "list_loop_mod", can now be installed with or without additional shorter_delay_mod (which generates frequent beeps!)

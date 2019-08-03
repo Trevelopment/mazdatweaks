@@ -7,9 +7,122 @@ permalink: /changelog2/
 order: 4
 ---
 
-# MZD-AIO-TI 2.x.x CHANGELOG [![Download](/images/download.svg))](http://dl.mazdatweaks.win)
+# MZD-AIO-TI 2.x.x CHANGELOG
 
-[Full Changelog](/changelog)
+# AIO + CASDK
+
+### v2.8.4
+#### Android Auto Headunit App v1.11
+- Tweaked Linux Stack TCP Buffers
+- More Stable HUD support (It is not perfect yet)- Detects if HUD is present, if not available the feature is not used
+  - **Buttons Remapped:**- Home: AA Home screen
+  - Ent: AA Music screen
+  - Nav: AA Navigation screen
+  - Fav: Switch Audio Focus (MZD &lt;-&gt; AA)
+  - Call End (Steering Wheel): Exit AA (when not in active call otherwise reject/end call)
+
+#### AIO Tweaks App v1.0
+- Applies CASDK localStorage tweak for saving options (for Video Player app too)
+- _Show localStorage_ Button shows the contents of localStorage (Values saved by Video Player, AIO Tweaks, and CASDK apps)
+- _adb kill-server_ Button kills adb server
+- _Check IP Address_ Button shows IP address (if WIFI or hotspot is connected or else there is no IP address)
+- _Wink Test_ Button shows test wink notification
+- Better behavior from &quot;Start/Stop&quot; Android Auto buttons
+
+#### Date 2 Statusbar / Statusbar Speedometer
+- Minor spacing adjustments for date
+- Coolant temp color (blue = under 30º; yellow = under 55º)
+
+#### Touchscreen While Driving Option - **DVDs While Driving**
+- Enable Playing DVDs while driving (DVD Player Required)
+
+#### Fuel Consumption Tweak _FIXED_
+- Added calculations for km/L (as default)
+- Added L/100km option (as converted)
+- Fixed all calculations (L/100km &lt;-&gt; km/L &lt;-&gt; mpg)
+- If you choose the same unit as your default, will show the same value twice - this is expected behavior
+  - Example: If your default is mpg and you choose mpg will show same number (in mpg) for both top and bottom values
+- The top value is in your default unit, bottom value is converted to chosen unit
+
+#### Semi-Transparent Parking Sensors
+- Now are in relevant colors (Green - Yellow - Orange - Red)
+
+#### No More Beeps
+- Fixed for FW v59.00.502+
+
+#### Autorun &amp; Recovery
+- Fixed Firewall Recovery (jci-fw.sh)
+- Fixed a bug where selecting autorun before compiling Full System Restore would create an autorun installer.
+- Added additional WARNING message that tweaking ability will be lost and chance to cancel uninstallation when choosing to uninstall on FW 59.00.502+ (that tweaking ability will be lost)
+
+#### <a id="CASDK_Apps_available_by_default_284"></a>**CASDK** Apps available by default
+- Snake
+- Simple Speedometer
+
+
+#### _**Mac &amp; Linux Quirks**_
+- _Fixed_ Blank window sometimes when navigating between Tweaks, CASDK, Autorun, &amp; System Restore views
+- <p>_Fixed_ Some of the &quot;Open&quot; buttons opening incorrect folders or none at all</p>
+- <p>Various other bug fixes</p>
+
+### <a id="v283_4"></a>v2.8.3
+#### <a id="AIO_Tweaks_App_v09_6"></a>AIO Tweaks App v0.9
+
+- _**CRITICAL FIX</strong>_ **System Restore** - Rewritten to accommodate new backup methods in v70
+
+#### <a id="Background_Rotator_9"></a>**Background Rotator**
+- _Fixed_ Drag &amp; Drop reordering functionality
+- _Fixed_ Sideways scrolling with mouse wheel
+- _Fixed_ “Use Your Own Joined Image (No Resize)” Button
+- Completely works now, choose seconds-per-background first
+
+#### <a id="Google_Translate_15"></a>Google Translate
+
+- Hide “contribute to a better translation” pop-up (would cover AIO tooltips)
+
+#### <a id="CASDK_Apps_available_by_default_18"></a>**CASDK** Apps available by default
+- Clock
+- Tetris
+- Multidash
+
+### v2.8.2
+#### **Android Auto Headunit App v1.10+**
+  - Same as v1.10 except:
+      - HUD is optional <var>*Beta*</var> feature
+      - Restored &quot;Reverse GPS&quot; Option
+
+#### **Video Player App v3.7**
+  - Compatibility for v70 using mfw_isink
+      - Resizing video during playback does not work with mfw_isink
+      - Choice to use the old video sink for FW before v70
+  - Shows videos or songs in **all subdirectories in the &quot;Movies&quot; or &quot;Music&quot; folders** respectively
+      - All videos in one list alphabetical order by first letter in file path
+      - Search takes approximately 30 seconds per 1000 songs/videos
+
+#### **No More Beeps**:
+
+  - Now Disables Beeps By directly disabling the MMUI Message That Triggers The Beep instead of disabling certain Calls to Common.Beep()
+
+#### **Date 2 Statusbar**:
+  - Fixed dangerous code that could potentially cause a bootloop in _extremely rare situations_
+      - If already installed, reinstalling this tweak is recommended to ensure dangerous code is fixed
+
+##### **Apps To Resources**
+
+  - addon-common files are saved to resources partition to free up more space
+
+#### v70+ Fixes:
+
+  - **v70.00.100**: Fixed _No More Disclaimer</em> &amp; <em>Order of Audio Sources_ Tweaks
+  - Backup &quot;.org&quot; files are saved on resources partition
+  - Periodic Space/Safety checks/alerts to abort the installation whenever 100% space is used
+  - v70 Integrity check (up to v70.00.100 only)
+      - Checks all .org backup files for integrity
+      - If backup is found to be incomplete or empty a fallback file is copied to new backup location, invalid backup is deleted
+      - If backup is valid it is moved to new backup location to free up space
+      - Repairs all broken backup files created by AIO
+      - _**On v70 if you have run out of space on the rootfs it is recommended to run &quot;Full System Restore&quot; ONCE to repair any potentially broken files**_
+
 ### v2.8.1
 
 #### **Android Auto Headunit App v1.10**
