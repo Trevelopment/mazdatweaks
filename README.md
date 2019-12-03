@@ -150,7 +150,7 @@ The empty album cover frame is removed, which is displayed when there is no entr
 
 ##### Swapfile
 
-The Swapfile will provide your system with an additionasl 1 GB of RAM running from the USB drive for playing videos. The installation of the swap file must be done on a USB drive with music and/or movies, that remains in the car.. The installation files are automatically deleted, the drive may no longer be removed during operation, because the system will use it also as memory.. Only remove the USB drive if the MZD system is off.
+The Swapfile will provide your system with an additional 1 GB of RAM running from the USB drive for playing videos. The installation of the swap file must be done on a USB drive with music and/or movies, that remains in the car. The installation files are automatically deleted, the drive may no longer be removed during operation, because the system will use it also as memory. Only remove the USB drive if the MZD system is off.
 
 ##### Fuel Consumption Tweak.
 
@@ -704,7 +704,8 @@ You have to place your videos in a folder "Movies"!
 
 -   Patches The USB Audio App With These Mods:   
     -   Long press (click hold) folders/all songs to play
-    -   Adds new icon for USB root menu on the UMP control</li> <li>Removes "More like this" button from UMP control
+    -   Adds new icon for USB root menu on the UMP control
+    -   Removes "More like this" button from UMP control
     -   Adds folders button to UMP control
     -   Set folders and song list icons correctly (were switched) on UMP control
     -   Removes trailing "/" character from folder names for list control and title of now playing
@@ -797,7 +798,7 @@ You have to place your videos in a folder "Movies"!
 
 ##### Version 0.3 Change log
 
-1.  Night Mode - Simple logic for now - 6AM to 6PM is day .. Night afterwards
+1.  Night Mode - Simple logic for now - 6AM to 6PM is day. Night afterwards
 2.  First attempt at making libssl/libusb calls thread safe (Voice control will crash otherwise ocassionally).
 3.  Increased USB send timeouts for better screen refresh.
 4.  Added LG's Vendor id to Android USB Device VID list
