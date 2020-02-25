@@ -7,7 +7,7 @@ permalink: /faq/
 order: 3
 ---
 
-## AIO FAQ  -  2018-12-01
+## AIO FAQ  -  2020-02-02
 
 **How can I get these awesome tweaks on my Infotainment System?**
 
@@ -103,7 +103,7 @@ order: 3
 
 **Is it one time installation or needs do be done every time before firmware upgrade?  Does it need to be installed separately or can be done with other tweaks at the same time?**
 
-> They only need to be installed once separately from tweaks then you can forget about it and it will do its magic when the time comes.  You don't even need to reinstall the scripts after updating, they will persist through firmware updates and will automatically run and repair your system after the update is complete.
+> They only need to be installed once separately from tweaks then you can forget about it and it will do its magic when the time comes.  You don't even need to reinstall the scripts after updating, they will persist through firmware updates and will automatically run and repair your system after the update is complete.  **The new exception to this is [FW v70.00.335+](/id7).  The update specifically targets and deletes the old autorun files so in order to maintain access the files must be installed via serial connection after the update is complete but before rebooting the system.**
 
 * * *
 
