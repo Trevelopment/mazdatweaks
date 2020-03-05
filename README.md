@@ -18,9 +18,11 @@
 
 ## WHICH FW VERSIONS ARE SUPPORTED?:
 
-**ALL FW V55, V56, V58, AND V59 ARE SUPPORTED**
+**ALL FW V55, V56, V58, V59 & V70 ARE SUPPORTED**
 
--   v59.00.502+ has taken away the ability to install tweaks.  For more information [Visit This Tread](//trevelopment.win/im-super-serial)
+- To install tweaks on:
+  -   **v59.00.502+** Requires making a *[serial connection](//trevelopment.win/im-super-serial)*
+  -   **v70.00.335+** Requires a *[slightly different aproach](/id7)*
 
 * * *
 
@@ -50,6 +52,7 @@ AIO Rebuilt with [Electron] & [AngularJS][mazdatweaks.com]
 Included Translator & Photo-Joiner (for background rotator tweak)
 
 ### Special thanks to all the developers out there that made this possible!
+
 
 ### And of course, Thanks to @Siutsch for [AIO 1.x][1]
 
@@ -146,7 +149,7 @@ Remove the background behind the buttons and other semi-transparent overlay back
 
 ##### Change Blank Album Art Frame
 
-The empty album cover frame is removed, which is displayed when there is no entry in the Gracenote database for the artist. Then the image of your choice (or transparent image) is displayed, if there is no cover in the MP3 tag too. Supported image formats are: jpg, jpeg, and png (any size). Note: The image chosen will be resized to 146px x 146px _BUT NOT CROPPED_ and converted to .png format
+The empty album cover frame is removed, which is displayed when there is no entry in the Gracenote database for the artist. Then the image of your choice (or transparent image) is displayed, if there is no cover in the MP3 tag too. Supported image formats are: jpg, jpeg, and png (any size). Note: The image chosen will be resized to 146px x 146px *BUT +NOT CROPPED* and converted to .png format
 
 ##### Swapfile
 
@@ -154,7 +157,7 @@ The Swapfile will provide your system with an additional 1 GB of RAM running fro
 
 ##### Fuel Consumption Tweak.
 
-Additional display of KM / L (or MPG).
+Additional display of KM/100L, L/KM, or MPG.
 
 ##### Videoplayer
 
@@ -173,7 +176,6 @@ After installation you can mirror the smartphone screen at the infotainment disp
 -   connect the smartphone with USB cable to the infotainment system
 -   start the app settings: H264, 800x480 @ 160, 1 mbps, then input 127.0.0.1 and press input receiver, then tap Start on right-up corner.
 
-.
 
 ##### Android Auto Headunit App.
 
@@ -181,7 +183,7 @@ After installation you can mirror the smartphone screen at the infotainment disp
 2.  Connect the phone to USB and pair the phone bluetooth with the CMU
 3.  Android Auto will then start. If it does not try to open from the 'Applications' menu
 4.  3 ways to stop AA
-    1.  Press Home Button on the Mazda's Commander
+    1.  Hold Call End Button on the stearing wheel or Back Button on the Mazda's Commander for 3 seconds
     2.  Disconnect the USB cable
     3.  Use the onscreen menu 'Return to Mazda Connect' on last screen with speedo icon.
 
