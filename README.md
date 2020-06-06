@@ -22,7 +22,7 @@
 
 - To install tweaks on:
   -   **v59.00.502+** Requires making a *[serial connection](//trevelopment.win/im-super-serial)*
-  -   **v70.00.335+** Requires a *[slightly different aproach](/id7)*
+  -   **v70.00.335+** Requires a *[slightly different approach](/id7)*
 
 * * *
 
@@ -57,7 +57,8 @@ Included Translator & Photo-Joiner (for background rotator tweak)
 ### And of course, Thanks to @Siutsch for [AIO 1.x][1]
 
 * * *
-
+<video alt="FSF 30 video" style="width: 100%;" controls="controls" poster="//static.fsf.org/nosvn/FSF30-video/fsf30-poster.png" crossorigin="anonymous">
+    <source src="//static.fsf.org/nosvn/FSF30-video/FSF_30_720p.webm" type="video/webm"></video>
 # The MZD-AIO Tweaks:
 
 ##### Touchscreen
