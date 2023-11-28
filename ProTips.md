@@ -10,7 +10,7 @@ ___
 - Wifi
 - SSH over ADB (Android Debug Bridge)
 
-In FW v56.00.5XX+ SSH access was disabled, It can be re-enabled with AIO or with [this script](//trevelopment.win/SSHBringback)
+In FW v56.00.5XX+ SSH access was disabled, It can be re-enabled with AIO or with [this script](http://trevelopment.win/SSHBringback)
 
 After restoring SSH your root user/pass will be cmu/jci.  With AIO a second root user/pass is added: jci/jci
 ##### *Why?*

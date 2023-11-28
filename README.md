@@ -1,7 +1,8 @@
 <div class="downloads">
+
 # **MZD-AIO-TI v{{site.version}}** [ ![MZD-AIO-WIN](/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
 
- **32bit Windows** [![MZD-AIO-32-BIT](/images/download.svg)](http://dl32.mazdatweaks.win "32-BIT-MZD-AIO-TI")
+**32bit Windows** [![MZD-AIO-32-BIT](/images/download.svg)](http://dl32.mazdatweaks.win "32-BIT-MZD-AIO-TI")
 **Mac OSX:** [ AIO v{{site.version}} OSX ](http://mac.mazdatweaks.win "AIO v{{site.version}} Dmg Package for Mac OSX")
 **Linux:**
 [ AIO v{{site.version}} Linux (deb) ](http://deb.mazdatweaks.win "AIO v{{site.version}} Deb Package for Linux")
@@ -21,7 +22,7 @@
 **ALL FW V55, V56, V58, V59 & V70 ARE SUPPORTED**
 
 - To install tweaks on:
-  -   **v59.00.502+** Requires making a *[serial connection](//trevelopment.win/im-super-serial)*
+  -   **v59.00.502+** Requires making a *[serial connection](http://trevelopment.win/im-super-serial)*
   -   **v70.00.335+** Requires a *[slightly different approach](/id7)*
 
 * * *
@@ -726,9 +727,9 @@ You have to place your videos in a folder "Movies"!
 -   [Latest AA Release](http://aa.mazdatweaks.win)
 -   [Latest AA W/ Beta Features](http://aabeta.mazdatweaks.win) (if there is one)
 
--   [Headunit Repository](//trevelopment.win/aarepo)
+-   [Headunit Repository](http://trevelopment.win/aarepo)
     -   <http://github.com/gartnera/headunit/releases>
--   [mazda3revolution thread](//trevelopment.win/aafix).
+-   [mazda3revolution thread](http://trevelopment.win/aafix).
     -   <http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/121561-android-auto-headunit-app-beta.html>
 -   
 

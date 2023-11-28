@@ -154,7 +154,7 @@ order: 3
 
 **Can I install AIO from an SD card?**
 
->  You can but it requires a little bit of DIY => [Autorun Script](//trevelopment.win/cmu-autorun)
+>  You can but it requires a little bit of DIY => [Autorun Script](http://trevelopment.win/cmu-autorun)
 
 * * *
 
