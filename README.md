@@ -1,11 +1,11 @@
 <div class="downloads">
 
-# **MZD-AIO-TI v{{site.version}}** [ ![MZD-AIO-WIN](/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
+# **MZD-AIO-TI v2.8.6** [ ![MZD-AIO-WIN](/images/download.svg?version=MZD-AIO-TI) ](http://dl.mazdatweaks.win "MZD-AIO-TI.exe")
 
 **32bit Windows** [![MZD-AIO-32-BIT](/images/download.svg)](http://dl32.mazdatweaks.win "32-BIT-MZD-AIO-TI")
-**Mac OSX:** [ AIO v{{site.version}} OSX ](http://mac.mazdatweaks.win "AIO v{{site.version}} Dmg Package for Mac OSX")
+**Mac OSX:** [ AIO v{{site.version}} OSX ](http://mac.mazdatweaks.win "AIO v2.8.6 Dmg Package for Mac OSX")
 **Linux:**
-[ AIO v{{site.version}} Linux (deb) ](http://deb.mazdatweaks.win "AIO v{{site.version}} Deb Package for Linux")
+[ AIO v{{site.version}} Linux (deb) ](http://deb.mazdatweaks.win "AIO v2.8.6 Deb Package for Linux")
 
 </div>
 
@@ -22,7 +22,7 @@
 **ALL FW V55, V56, V58, V59 & V70 ARE SUPPORTED**
 
 - To install tweaks on:
-  -   **v59.00.502+** Requires making a *[serial connection](http://trevelopment.win/im-super-serial)*
+  -   **v59.00.502+** Requires making a *[serial connection](/serial)*
   -   **v70.00.335+** Requires a *[slightly different approach](/id7)*
 
 * * *
