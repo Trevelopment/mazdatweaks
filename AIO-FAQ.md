@@ -31,11 +31,11 @@ order: 3
 
 >  **AIO IS COMPATIBLE WITH ALL FW V55, V56, V58, AND V59**
 >
-> **AIO is also compatible with version 59.00.502 - v70.00.100 ONLY IF YOU HAVE DONE THE NECESSARY STEPS TO ENABLE TWEAKS INSTALLATION ([Read This Thread For More Info](https://trevelopment.win/im-super-serial))**
+> **AIO is also compatible with version 59.00.502 - v70.00.100 ONLY IF YOU HAVE DONE THE NECESSARY STEPS TO ENABLE TWEAKS INSTALLATION ([Read This Thread For More Info](/serial))**
 >
 >  **This can be done by installing autorun & recovery scripts before updating**
 >
->  **If you never had an earlier FW then the only way to gain access right now is to [via serial connection](https://trevelopment.win/im-super-serial)**
+>  **If you never had an earlier FW then the only way to gain access right now is to [via serial connection](/serial)**
 >
 >  <a href="#" class="supported-fw-btn">All Compatible Firmware Versions Are Listed Here.</a>
 >  AIO will read out your FW version at beginning of installation, if it's not compatible the installation will abort.
@@ -97,7 +97,7 @@ order: 3
 
 **What is "autorun & recovery?"**
 
-> Autorun & recovery are a set of scripts that will automatically regain SSH access and allow for tweaks to be installed when updating to firmware v59.00.502+ or [when gaining serial access](https://trevelopment.win/im-super-serial).  The recovery script lies dormant until it detects it is needed then runs automatically in the background without you even noticing that it is fixing the issue.  
+> Autorun & recovery are a set of scripts that will automatically regain SSH access and allow for tweaks to be installed when updating to firmware v59.00.502+ or [when gaining serial access](/serial).  The recovery script lies dormant until it detects it is needed then runs automatically in the background without you even noticing that it is fixing the issue.  
 
 * * *
 
@@ -154,7 +154,7 @@ order: 3
 
 **Can I install AIO from an SD card?**
 
->  You can but it requires a little bit of DIY => [Autorun Script](http://trevelopment.win/cmu-autorun)
+>  You can but it requires a little bit of DIY => [Autorun Script](https://github.com/Trevelopment/cmu-autorun)
 
 * * *
 
@@ -312,7 +312,7 @@ order: 3
 
 **How Can I contribute to Android Auto development?**
 
-> Visit the [headunit repository on Github](https://trevelopment.win/aarepo "Android Auto Headunit Repository")
+> Visit the [headunit repository on Github](https://github.com/gartnera/headunit "Android Auto Headunit Repository")
 > Check this out: [How to Set up the Android Auto Headunit Development Environment and Emulator in an Ubuntu Virtual Machine running on Windows in under 1 Hour](/androidauto "Tutorial: Run Android Auto In An Ubuntu VM")
 
 * * *

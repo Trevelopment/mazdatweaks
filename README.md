@@ -727,9 +727,9 @@ You have to place your videos in a folder "Movies"!
 -   [Latest AA Release](http://aa.mazdatweaks.win)
 -   [Latest AA W/ Beta Features](http://aabeta.mazdatweaks.win) (if there is one)
 
--   [Headunit Repository](http://trevelopment.win/aarepo)
+-   [Headunit Repository](http://github.com/gartnera/headunit/releases)
     -   <http://github.com/gartnera/headunit/releases>
--   [mazda3revolution thread](http://trevelopment.win/aafix).
+-   [mazda3revolution thread](http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/121561-android-auto-headunit-app-beta.html).
     -   <http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/121561-android-auto-headunit-app-beta.html>
 -   
 

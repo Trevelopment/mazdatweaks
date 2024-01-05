@@ -13,22 +13,22 @@ permalink: /androidauto/
 [Latest AA W/ Beta Features](http://aabeta.mazdatweaks.win) (if there is one)
 ##### Old Versions
 _Beta releases will have 1 or more features from the next version but official releases will have more stable code._<br>
-[v1.04](http://trevelopment.win/aa104)<br>
-[v1.05](http://trevelopment.win/aa105)<br>
-[v1.06](http://trevelopment.win/aa106)<br>
-[v1.06b](http://trevelopment.win/aa106b)(Car GPS disabled)<br>
-[v1.07](http://trevelopment.win/aa107)<br>
-[Mirror for v1.05b, v1.06 & v1.06b](http://trevelopment.win/aa-mirror105b)<br>
-[Another Mirror for v1.06](http://trevelopment.win/aa-megamirror106)<br>
-[Mirror for v1.07](http://trevelopment.win/aamirror107)<br>
-[v1.09](http://trevelopment.win/aa109)<br>
-[v1.10+](http://trevelopment.win/aa110) (Without HUD because feature was unstable)<br>
-[v1.12](https://dl.bintray.com/aio/aio/AA-v1.12.zip)<br>
-[v1.13](https://dl.bintray.com/aio/aio/AA-v1.13.zip)<br>
+#### Sorry these are broken links
+[v1.04](/aa104)<br>
+[v1.05](/aa105)<br>
+[v1.06](/aa106)<br>
+[v1.06b](/aa106b)(Car GPS disabled)<br>
+[v1.07](/aa107)<br>
+[Mirror for v1.05b, v1.06 & v1.06b](/aa-mirror105b)<br>
+[Another Mirror for v1.06](/aa-megamirror106)<br>
+[Mirror for v1.07](/aamirror107)<br>
+[v1.09](/aa109)<br>
+[v1.10+](/aa110) (Without HUD because feature was unstable)<br>
+[v1.12](/AA-v1.12.zip)<br>
+[v1.13](/AA-v1.13.zip)<br>
 [v1.14b by Radarwild](https://www.mazda3revolution.com/threads/aa-v1-14b-tru_go-fw55-59-fw70-abarth124-spider-sound-touch-usb-s-beta.239375/)
 
-For more information visit the [Headunit Repository](http://trevelopment.win/aarepo)
-or visit [this mazda3revolution thread](http://trevelopment.win/aafix).
+For more information visit the [Headunit Repository](http://github.com/gartnera/headunit/)
 
 ---
 ## Instructions for Android Auto Wireless Support (v1.09+):

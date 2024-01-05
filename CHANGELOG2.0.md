@@ -370,7 +370,7 @@ Instructions For Android Auto WiFi: 0. Before you start: Activate Android Auto d
 - "Reverse App List" button - Reverses the Applications List (resets on boot).
 - "Unmount Swap" button - Unmount a mounted swapfile
 
-#### Test Mode (T/M) Button [(Thread)](https://trevelopment.win/jci-test-mode)
+#### Test Mode (T/M) Button
 - Included with the **1 Second Diagnostic Menu** tweak because it is part of the Diagnostic App
 - In v59 "JCI Test Mode" was disabled in the Diagnostic App
 - This tweak brings back Test Mode for v59
@@ -749,7 +749,7 @@ cause an improperly formatted JSON file.
   - Removing Navigation SD card **will improve video player performance** this is due to the memory issues that exist within the MZD system.
   - Installation of the swapfile will also improve performance, swap mounting has been improved.
 
-  ##### Want more info on the Video Player? Check out the [Video Player Repository](http://trevelopment.win/videoplayergithub)
+  ##### Want more info on the Video Player?
 
   - **CUSTOM BOOT ANIMATIONS**
   - Change all or part of the boot animation (Default 'Disabled' Animation Uses Default LoopLogo for all 3 parts of the sequence allowing for the shortest boot time the illusion of no boot animation)
@@ -818,7 +818,7 @@ cause an improperly formatted JSON file.
   - Added Compatible Firmware: v56.00.403A-JP
   - SSH Bringback
   - Compatibility extended to all FW v56.00.511 - 59.00.443 (Prior to v56.00.511 SSH is already enabled)
-  - New user/password will persist through firmware upgrade. [For More Information View This Infotainment Project Thread](http://trevelopment.win/SSHBringback)
+  - New user/password will persist through firmware upgrade.
   - New User: cmu
   - Password: jci
   - *New Username and Password will only apply to installations from this point on*
@@ -891,7 +891,7 @@ cause an improperly formatted JSON file.
   _Pro Tip -_ Install partial color scheme by deleting some of the images before installing.
   ##### Custom Theme Support
   - Download any premade theme and use with MZD-AIO-TI
-  - Download from: [List of MZD Themes](http://trevelopment.win/MZD-themes)
+  - Download from: [List of MZD Themes](https://www.pellissier.ch/MZD/list_theme.php)
   - Forum: [Corwin9s's Themes for MZD Connect](http://mazda3revolution.com/forums/2014-2016-mazda-3-skyactiv-audio-electronics/186218-corwin9s-s-themes-mzd-connect.html)
   - Install your own custom made theme
 

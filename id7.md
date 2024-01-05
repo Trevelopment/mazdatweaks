@@ -5,7 +5,7 @@ permalink: /id7/
 ---
 # **WARNING UPDATING TO V70.00.335+ REQUIRES A [SERIAL CONNECTION](/serial/#process) DURING THE UPDATE TO MAINTAIN ROOT ACCESS**
 
-#### **You will need: the "update.up" file, [ID7_Recovery_XX](http://trevelopment.win/xx)**, Computer connected via serial connection,  [Putty](https://www.putty.org/) or [SecureCRT](https://www.vandyke.com/products/securecrt/).
+#### **You will need: the "update.up" file, [ID7_Recovery_XX](https://github.com/Trevelopment/cmu-autorun/releases/download/1/XX.zip)**, Computer connected via serial connection,  [Putty](https://www.putty.org/) or [SecureCRT](https://www.vandyke.com/products/securecrt/).
 - Copy the "XX" folder onto the USB drive along with the update file.
 - Make sure your serial console is working properly and start the update. You can leave the console running during the update.
 - When the update is finished the text will stop completely.  After the update is complete, copy & paste this command: <span class="copy-msg"></span>
