@@ -9,6 +9,14 @@
 
 </div>
 
+<div class="resources">
+
+### Some additional resources can be found [here](https://github.com/Trevelopment/cmu-autorun/releases) (Disable Touchscreen, Remove Wifi AP, XX folder for serial connection >= v70, Color Scheme files)
+
+#### Also some other MZD themes can be found [Here](https://www.pellissier.ch/MZD/list_theme.php)
+
+</div>
+
 ## MZD All In One tweaks Installer
 
 #### Installer for many different system tweaks for Mazda MZD Infotainment System
